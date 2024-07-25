@@ -3,6 +3,12 @@ Estuary: A Framework for Building Multimodal Low-Latency Real-Time Socially Inte
 
 Work in progress
 
+# Basics
+- Built with React 
+- `npm start` to preview on localhost:3000
+- `npm run deploy` to push and deploy on GitHub Pages
+- whatever you need to push source code to `main` branch (`ghpages` branch is only for the build(?) for GitHub Pages)
+
 <!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
