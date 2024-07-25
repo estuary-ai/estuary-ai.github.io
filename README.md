@@ -1,13 +1,25 @@
-# Homepage and Documentation for Estuary
-Estuary: A Framework for Building Multimodal Low-Latency Real-Time Socially Interactive Agents
+# Estuary: A Framework for Building Multimodal Low-Latency Real-Time Socially Interactive Agents
+## Homepage and Documentation
+Work in progress~
 
-Work in progress
+## Basics
+- Built with React
+- `main` branch is for source code (modify this!)
+- `ghpages` branch is only for the build(?) for GitHub Pages
 
-# Basics
-- Built with React 
-- `npm start` to preview on localhost:3000
-- `npm run deploy` to push and deploy on GitHub Pages
-- whatever you need to push source code to `main` branch (`ghpages` branch is only for the build(?) for GitHub Pages)
+## Prereqs
+- npm --version = 10.2.4 (or higher?)
+- node --version = 20.11.1 (or higher?)
+- need git and a GitHub account!
+
+## Quick start
+1. Clone repo!
+2. `cd` into root directory that contains `package.json`. Make sure you're in the `main` branch
+3. `npm install` to install all dependencies
+4. Make changes as you wish!
+5. To preview your local changes on localhost:3000, run `npm start`
+6. To push and deploy on GitHub Pages, run `npm run deploy`
+7. Make sure to push your local changes to `main` branch as well!
 
 <!-- # Getting Started with Create React App
 
