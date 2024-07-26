@@ -1,30 +1,89 @@
-import React from "react";
+import {React, useState} from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-import {Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
+
+import Hamburger from "./Hamburger";
 
 function NavBar() {
-    return (
+
+    const [isHamOpen, setHamOpen] = useState(false);
+
+    const toggleHamburger = () =>{
+        setHamOpen(!isHamOpen)
+    }
+
+    return(
         <div>
-            {/* padding */}
-            <div style={{width: "56px"}}></div>
-            <Navbar style={{
-                backgroundColor: "#424242",
-            }}>
-                <Navbar.Brand href="#home">Estuary</Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse id="base-navbar" className="d-flex justify-content-end">
-                    <Nav>
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#documentation">Doc</Nav.Link>
-                        <Nav.Link href="#demos">Demos</Nav.Link>
-                    </Nav>
-                    <Form inline>
-                        <FormControl type="text" placeholder="Search" className="ml-auto"/>
-                    </Form>
-                </Navbar.Collapse>
-            </Navbar>
+            <div className="navigation">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                </ul>
+                <div className="hamburger" onClick={toggleHamburger}>
+                    <Hamburger isOpen={isHamOpen}/>
+                </div>
+            </div>
+
+
+            <style js>{`
+
+                .navigation{
+                    display: flex;
+                    height: 50px;
+                    flex-direction: row;
+                }
+                .navigation ul{
+                    width: 100%;
+                    display:flex;
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    overflow: hidden;
+                    z-index: 6;
+                }
+                .navigation ul li{
+                    list-style-type: none;
+                    padding-right: 10px;
+                }
+
+                .hamburger{
+                    
+                    display:none;
+                    
+                } 
+
+
+                {/* when screen width is small */}
+                @media (max-width: 767px){
+                    .hamburger{
+                        width: 100%;
+                        display: flex;
+                        margin: 0;
+                        padding-top: 8px;
+                        overflow: hidden;
+                        justify-content: flex-end;
+                        z-index: 6;
+                    }
+                   
+                    .navigation ul{
+                        display: ${isHamOpen ? 'flex' : 'none'};
+                        flex-direction: column;
+                        align-items: flex-end;
+                        position: fixed;
+                        background-color: #373737f5;
+                        color: aliceblue;
+                        height: 150px;
+                        width: 100vw;
+                        margin-top: 50px;
+                    }
+                }
+                
+               
+                
+            `}</style>
         </div>
     )
+
 }
 
 export default NavBar;
