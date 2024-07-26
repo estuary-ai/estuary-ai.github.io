@@ -1,34 +1,38 @@
-import {React, useState} from "react";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 
+import DocsPage from "./DocsPage";
+import DemosPage from "./DemosPage";
+
 import Hamburger from "./Hamburger";
+
+{/* <Route path="/" component={App} />
+<Route path="/docs" component={DocsPage} />
+<Route path="/demos" component={DemosPage} /> */}
 
 function NavBar() {
 
     const [isHamOpen, setHamOpen] = useState(false);
 
-    const toggleHamburger = () =>{
+    const toggleHamburger = () => {
         setHamOpen(!isHamOpen)
     }
 
-    return(
-        <div>
-            <div className="navigation">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact us</li>
-                </ul>
-                <div className="hamburger" onClick={toggleHamburger}>
-                    <Hamburger isOpen={isHamOpen}/>
-                </div>
+    return (
+        <div className="navigation">
+            <ul>
+                <li>Home</li>
+                <li><a href="./DocsPage.js">Docs</a></li>
+                <li><a href="./DemosPage.js">Demos</a></li>
+            </ul>
+            <div className="hamburger" onClick={toggleHamburger}>
+                <Hamburger isOpen={isHamOpen} />
             </div>
-
-
             <style js>{`
-
                 .navigation{
                     display: flex;
+                    width: 100%;
                     height: 50px;
                     flex-direction: row;
                 }
@@ -64,7 +68,7 @@ function NavBar() {
                         justify-content: flex-end;
                         z-index: 6;
                     }
-                   
+                
                     .navigation ul{
                         display: ${isHamOpen ? 'flex' : 'none'};
                         flex-direction: column;
@@ -77,9 +81,6 @@ function NavBar() {
                         margin-top: 50px;
                     }
                 }
-                
-               
-                
             `}</style>
         </div>
     )

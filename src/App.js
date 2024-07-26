@@ -1,16 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Navbar from './components/NavBar';
-import Pages from './components/Pages';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <div className='main-container' style={{backgroundColor: "gray"}}>
-      <Navbar />
-      <Pages />
-      <h1>Welcome to Estuary!</h1>
-    </div>
+    <HomePage />
   );
 }
 
