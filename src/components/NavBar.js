@@ -1,15 +1,10 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css';
 
-import DocsPage from "./DocsPage";
-import DemosPage from "./DemosPage";
+import 'bootstrap/dist/css/bootstrap.css';
 
 import Hamburger from "./Hamburger";
 
-{/* <Route path="/" component={App} />
-<Route path="/docs" component={DocsPage} />
-<Route path="/demos" component={DemosPage} /> */}
+
 
 function NavBar() {
 

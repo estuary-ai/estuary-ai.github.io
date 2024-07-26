@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import Navbar from './NavBar';
+import Navbar from '../components/NavBar';
 
 function HomePage() {
     return (
