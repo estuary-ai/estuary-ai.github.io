@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -17,9 +18,9 @@ function NavBar() {
     return (
         <div className="navigation">
             <ul>
-                <li>Home</li>
-                <li><a href="./DocsPage.js">Docs</a></li>
-                <li><a href="./DemosPage.js">Demos</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/docs">Docs</Link></li>
+                <li><Link to="/demos">Demos</Link></li>
             </ul>
             <div className="hamburger" onClick={toggleHamburger}>
                 <Hamburger isOpen={isHamOpen} />

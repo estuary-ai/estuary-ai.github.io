@@ -1,11 +1,8 @@
 import { Card } from 'react-bootstrap';
-import Navbar from '../components/NavBar';
 
 function HomePage() {
     return (
 
-        <div className='main-container' style={{backgroundColor: "gray"}}>
-            <Navbar />
             <div>
                 <Card>
                     <Card.Body>
@@ -16,22 +13,6 @@ function HomePage() {
                     </Card.Body>
                 </Card>
             </div>
-
-            <style js>{`
-                .main-container{
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                }
-            `}</style>
-        </div>
-
-    
-
-        
 
     )
 }
