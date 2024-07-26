@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap';
+import TableOfContents from '../components/TableOfContents';
 
 function DocsPage() {
     return (
@@ -12,6 +13,8 @@ function DocsPage() {
                     </Card.Text>
                 </Card.Body>
             </Card>
+
+            <TableOfContents />
         </div>
 
     )

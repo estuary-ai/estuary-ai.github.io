@@ -59,7 +59,7 @@ function NavBar() {
                         width: 100%;
                         display: flex;
                         margin: 0;
-                        padding-top: 8px;
+                        padding: 8px;
                         overflow: hidden;
                         justify-content: flex-end;
                         z-index: 6;

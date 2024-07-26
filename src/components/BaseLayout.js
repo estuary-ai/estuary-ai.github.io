@@ -9,12 +9,8 @@ const BaseLayout = () => {
 
         <style js>{`
             .main-container{
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
+              width: 100vw;
+              height: 100vh;
             }
         `}</style>
     </div>
