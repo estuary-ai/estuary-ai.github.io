@@ -3,16 +3,9 @@ import NavBar from "./NavBar";
 
 const BaseLayout = () => {
   return (
-    <div className='main-container' style={{backgroundColor: "gray"}}>
+    <div>
         <NavBar />
         <Outlet />
-
-        <style js>{`
-            .main-container{
-              width: 100vw;
-              height: 100vh;
-            }
-        `}</style>
     </div>
   )
 };

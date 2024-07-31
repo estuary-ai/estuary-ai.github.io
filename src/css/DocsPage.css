@@ -1,0 +1,11 @@
+.mainContent {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 1em;
+    color: white;
+}
+
+.sidebyside {
+    display: flex;
+    justify-content: space-between;
+}

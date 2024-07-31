@@ -1,3 +1,5 @@
+import "../css/NavBar.css";
+
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -26,34 +28,7 @@ function NavBar() {
                 <Hamburger isOpen={isHamOpen} />
             </div>
             <style js>{`
-                .navigation{
-                    display: flex;
-                    width: 100%;
-                    height: 50px;
-                    flex-direction: row;
-                }
-                .navigation ul{
-                    width: 100%;
-                    display:flex;
-                    margin: 0;
-                    padding: 0;
-                    justify-content: center;
-                    overflow: hidden;
-                    z-index: 6;
-                }
-                .navigation ul li{
-                    list-style-type: none;
-                    padding-right: 10px;
-                }
-
-                .hamburger{
-                    
-                    display:none;
-                    
-                } 
-
-
-                {/* when screen width is small */}
+                {/* when screen width small */}
                 @media (max-width: 767px){
                     .hamburger{
                         width: 100%;
@@ -64,7 +39,7 @@ function NavBar() {
                         justify-content: flex-end;
                         z-index: 6;
                     }
-                
+
                     .navigation ul{
                         display: ${isHamOpen ? 'flex' : 'none'};
                         flex-direction: column;

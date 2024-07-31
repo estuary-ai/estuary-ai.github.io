@@ -1,16 +1,11 @@
 nav {
-    width: 220px;
-    min-width: 220px;
-    padding: 16px;
-    align-self: flex-start;
-    position: -webkit-sticky;
     position: sticky;
-    top: 48px;
-    max-height: calc(100vh - 70px);
+    position: -webkit-sticky; /* For Safari */
+    top: 80px; /* How far down the page you want your ToC to live */
+  
+    /* Give table of contents a scrollbar */
+    max-height: calc(100vh - 60px);
     overflow: auto;
-    margin-top: 150px;
-}
 
-nav ul li {
-    margin-bottom: 15px;
+    color: #bebebe;
 }

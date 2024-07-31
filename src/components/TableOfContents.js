@@ -1,11 +1,12 @@
 import '../css/TableOfContents.css';
 
 function TableOfContents() {
+
+
     return (
-        <nav>
-            <ul>
-                <li><a href="#/">Something</a></li>
-            </ul>
+        <nav aria-label="Table of contents">
+            <h2>Table of Contents</h2>
+            
         </nav>
     )
 }
