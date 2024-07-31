@@ -6,12 +6,30 @@ nav {
     /* Give table of contents a scrollbar */
     max-height: calc(100vh - 120px);
     overflow: auto;
-
-    
 }
 
 .toc {
     display: flex;
     flex-direction: column;
-    color: #bebebe;
+    color: #969696;
+    margin-left: 60px;
+}
+
+.toc li.active > a {
+    color: white !important;
+}
+
+.toc li > a {
+    color: #969696 !important;
+}
+
+.toc li > a:hover {
+    color: white !important;
+}
+
+/* when screen small */
+@media (max-width: 767px){
+    .toc{
+        display: none;
+    }
 }

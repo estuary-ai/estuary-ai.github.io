@@ -157,20 +157,11 @@ function TableOfContents() {
     useIntersectionObserver(setActiveId);
 
     return (
-        <div className='toc'>
-            <h2>Table of Contents</h2>
-            <nav aria-label="Table of contents">
+        <div >
+            <nav aria-label="Table of contents" className='toc'>
+                <h2>Table of Contents</h2>
                 <Headings headings={nestedHeadings} activeId={activeId} />
             </nav>
-
-            <style js>{`
-                    {/* when screen width small */}
-                    @media (max-width: 767px){
-                        .toc{
-                            display: none;
-                        }
-                    }
-            `}</style>
 
         </div>
         

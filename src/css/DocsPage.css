@@ -1,5 +1,5 @@
 .mainContent {
-    width: 70%;
+    width: 80%;
     color: white;
 }
 
@@ -9,11 +9,7 @@ h2, h3 {
 }
 
 
-
 .container {
     display: flex;
-}
-
-.toc {
-    display: flex;
+    justify-content: space-between;
 }
