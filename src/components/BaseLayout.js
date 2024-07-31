@@ -5,7 +5,9 @@ const BaseLayout = () => {
   return (
     <div>
         <NavBar />
-        <Outlet />
+        <div style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}>
+          <Outlet/>
+        </div>
     </div>
   )
 };

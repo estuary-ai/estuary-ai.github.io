@@ -7,8 +7,7 @@
 
     margin-bottom: 10px;
 
-    position: sticky;
-    position: -webkit-sticky; /* For Safari */
+    position: fixed;
     top: 0; /* How far down the page you want your ToC to live */
 }
 .navigation ul{
@@ -18,7 +17,7 @@
     padding: 0;
     justify-content: center;
     overflow: hidden;
-    z-index: 6;
+    z-index: 9;
 
     padding-top: 10px;
     font-size: 1.2em;

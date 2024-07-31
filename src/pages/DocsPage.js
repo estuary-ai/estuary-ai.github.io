@@ -43,7 +43,18 @@ function DocsPage() {
                 </p>
             </div>
             
-            <TableOfContents />
+            <TableOfContents/>
+
+            
+
+            <style js>{`
+                {/* when screen width small */}
+                @media (max-width: 767px){
+                    .mainContent{
+                        width: 100%;
+                    }
+                }
+            `}</style>
         </div>
 
     )
