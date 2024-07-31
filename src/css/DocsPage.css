@@ -3,9 +3,15 @@
     color: white;
 }
 
-.sidebyside {
+/* all h2 and h3 headers */
+h2, h3 {
+    scroll-margin-top: 60px;
+}
+
+
+
+.container {
     display: flex;
-    justify-content: space-between;
 }
 
 .toc {
