@@ -2,35 +2,15 @@
 
 import '../css/DocsPage.css';
 
-import { Card } from 'react-bootstrap';
+// import { Card } from 'react-bootstrap';
 import TableOfContents from '../components/TableOfContents';
-
-
-const Headings = ({ headings, activeId }) => {
-    <ul>
-        {headings.map(heading => (
-            <li key={heading.id} className={heading.id === activeId ? 'active' : ''}>
-                <a 
-                    href={`#${heading.id}`} 
-                    onClick={(e) => {
-                        e.preventDefault();
-                        document.querySelector(`#${heading.id}`).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }}
-                >
-                    {heading.title}
-                </a>
-                {/* {headings.item} */}
-            </li>
-        ))}
-    </ul>
-}
+// import { useRef } from 'react';
+// import { computeHeadingLevel } from '@testing-library/react';
 
 function DocsPage() {
     return (
         <div className='sidebyside'>
-            <div className='mainContent'>
+            <main className='mainContent'>
                 <h1 id="title">Documentation for Estuary</h1>
 
                 
@@ -64,7 +44,7 @@ function DocsPage() {
 
                 Vitae inceptos conubia cursus habitasse proin habitant pharetra. Ad auctor hendrerit primis tempus; nibh bibendum. Taciti morbi nullam magnis feugiat vivamus. Dis at maecenas fames erat condimentum risus sed. Purus facilisi ipsum vestibulum maximus nostra et sit lectus. Massa nam mus pellentesque; aptent donec habitasse maximus. Nostra lobortis dolor pellentesque finibus vehicula, felis suscipit fermentum. Arcu volutpat tortor class vitae faucibus primis condimentum elementum.
                 </p>
-            </div>
+            </main>
             
             <TableOfContents/>
 
