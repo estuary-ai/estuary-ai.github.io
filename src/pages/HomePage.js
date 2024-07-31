@@ -4,7 +4,7 @@ function HomePage() {
     return (
 
             <div>
-                <Card>
+                <Card style={{position: "inherit"}}>
                     <Card.Body>
                         <Card.Title>Welcome to Estuary</Card.Title>
                         <Card.Text>

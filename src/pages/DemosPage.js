@@ -4,7 +4,7 @@ function DemosPage() {
     return (
 
         <div>
-            <Card>
+            <Card style={{position: "inherit"}}>
                 <Card.Body>
                     <Card.Title>Demos</Card.Title>
                     <Card.Text>
