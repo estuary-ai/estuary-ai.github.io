@@ -1,7 +1,6 @@
 import '../css/TableOfContents.css';
 import React from 'react';
 
-import { useState } from 'react';
 
 // finds and makes headings and makes scroll into view
 const Headings = ({ headings, activeId }) => (
@@ -152,19 +151,16 @@ const useIntersectionObserver = (setActiveId) => {
 //   );
 // };
 function TableOfContents() {
-    const [activeId, setActiveId] = useState(null);
+    const [activeId, setActiveId] = React.useState();
     const { nestedHeadings } = useHeadingsData();
     useIntersectionObserver(setActiveId);
 
     return (
-        <div >
-            <nav aria-label="Table of contents" className='toc'>
-                <h2>Table of Contents</h2>
-                <Headings headings={nestedHeadings} activeId={activeId} />
-            </nav>
-
-        </div>
-        
+          <nav aria-label="Table of contents" className='toc'>
+              <h2>Table of Contents</h2>
+              <Headings headings={nestedHeadings} activeId={activeId} />
+          </nav>
+      
     )
 }
 
