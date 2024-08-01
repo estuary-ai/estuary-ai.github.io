@@ -1,0 +1,82 @@
+html {
+    overflow: scroll;
+}
+
+.title {
+    text-align: center;
+    padding: 40px;
+}
+
+.title h1, h2{
+    color: white;
+}
+
+.linkbtn {
+    /* button */
+    background-color: #d4d4d4;
+    color: #131313;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.linkbtn:hover {
+    background-color: #858585;
+}
+
+.hiderBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.horScroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+
+    scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+
+    height: 700px;
+    width: 100%;
+
+    -webkit-overflow-scrolling: touch;
+
+    /* hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* hide scrollbar for chrome, safari and opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.horScroll img {
+    scroll-snap-align: center;
+    width: 60vw;
+
+    margin-right: calc(100vw - 30vw);
+    margin-left: calc(100vw - 30vw);
+    border-radius: 10px;
+}
+
+.imgWrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
