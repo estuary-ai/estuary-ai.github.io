@@ -26,15 +26,13 @@
 .navigation ul li{
     list-style-type: none;
     padding-right: 40px;
-    
-    
 }
 
 .hamburger{
     display:none;
 } 
 
-a {
+.navigation a {
     text-decoration: none !important;
     color: white !important; 
 }
