@@ -1,0 +1,61 @@
+
+
+.sidebarLinks {
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+    top: 50px; /* How far down the page you want your ToC to live */
+  
+    /* Give table of contents a scrollbar */
+    max-height: calc(100vh - 65px);
+    overflow: auto;
+
+    min-width: 150px;
+    
+    padding: 40px 0 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    z-index: 3;
+}
+
+.sidebarContainer .background1 {
+    background-color: beige;
+    height: 200vh;
+    top: 0;
+
+    transform: translateY(-400px);
+
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+
+    overflow: hidden;
+}
+
+.sidebarContainer .background2 {
+    background-color: beige;
+    height: 200vh;
+    top: 0;
+
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+
+    overflow: hidden;
+}
+
+.sidebarLinks a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebarLinks a:hover {
+    color: rgb(255, 91, 233);
+}
+
+/* when screen small */
+@media (max-width: 767px){
+    .sidebarContainer{
+        display: none;
+    }
+}
