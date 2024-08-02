@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7b68164.css",
-    "main.js": "/static/js/main.279ed648.js",
+    "main.css": "/static/css/main.9fbd7b92.css",
+    "main.js": "/static/js/main.1fac4185.js",
     "static/js/453.20734259.chunk.js": "/static/js/453.20734259.chunk.js",
+    "static/media/SkellyChair.png": "/static/media/SkellyChair.e3db4eddfc1b2bf2cb8d.png",
+    "static/media/Teaser_mesh.png": "/static/media/Teaser_mesh.a1007214c1a495f9ccc8.png",
+    "static/media/Diagram.png": "/static/media/Diagram.b977ec625556606d66c1.png",
+    "static/media/Teaser_chair.png": "/static/media/Teaser_chair.464f4fcb53825fbd206a.png",
+    "static/media/Estuary High Level Composite Structure.png": "/static/media/Estuary High Level Composite Structure.625d4c03e4f03407c0fc.png",
+    "static/media/Teaser_meta.png": "/static/media/Teaser_meta.d98050f2736e14e88df5.png",
     "index.html": "/index.html",
-    "main.d7b68164.css.map": "/static/css/main.d7b68164.css.map",
-    "main.279ed648.js.map": "/static/js/main.279ed648.js.map",
+    "main.9fbd7b92.css.map": "/static/css/main.9fbd7b92.css.map",
+    "main.1fac4185.js.map": "/static/js/main.1fac4185.js.map",
     "453.20734259.chunk.js.map": "/static/js/453.20734259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7b68164.css",
-    "static/js/main.279ed648.js"
+    "static/css/main.9fbd7b92.css",
+    "static/js/main.1fac4185.js"
   ]
 }
