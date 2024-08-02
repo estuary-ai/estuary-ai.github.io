@@ -5,7 +5,6 @@ import skelly from "../assets/SkellyChair.png";
 import teaserchair from "../assets/Teaser_chair.png";
 import teasermesh from "../assets/Teaser_mesh.png";
 import teasermeta from "../assets/Teaser_meta.png";
-import empty from "../assets/Empty.png";
 
 function HomePage() {
 
