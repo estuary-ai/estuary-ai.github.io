@@ -1,6 +1,4 @@
-
-
-.sidebarLinks {
+.sidebarContainer {
     position: sticky;
     position: -webkit-sticky; /* For Safari */
     top: 50px; /* How far down the page you want your ToC to live */
@@ -10,6 +8,7 @@
     overflow: auto;
 
     min-width: 150px;
+    background-color: beige;
     
     padding: 40px 0 0 30px;
 
@@ -20,36 +19,12 @@
     z-index: 3;
 }
 
-.sidebarContainer .background1 {
-    background-color: beige;
-    height: 200vh;
-    top: 0;
-
-    transform: translateY(-400px);
-
-    position: sticky;
-    position: -webkit-sticky; /* For Safari */
-
-    overflow: hidden;
-}
-
-.sidebarContainer .background2 {
-    background-color: beige;
-    height: 100vh;
-    top: 0;
-
-    position: sticky;
-    position: -webkit-sticky; /* For Safari */
-
-    overflow: hidden;
-}
-
-.sidebarLinks a {
+.sidebarContainer a {
     text-decoration: none;
     color: black;
 }
 
-.sidebarLinks a:hover {
+.sidebarContainer a:hover {
     color: rgb(255, 91, 233);
 }
 
