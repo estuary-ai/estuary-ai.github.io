@@ -8,9 +8,11 @@ function DocsPage() {
     return (
         <div className='container'>
             <main className='mainContent'>
+                {/* title name thing */}
                 <h1 id="title">Documentation for Estuary</h1>
 
                 
+                {/* actual content */}
                 <h2 id="disclaimer">Introduction</h2>
                 <p>
                 Lorem ipsum odor amet, consectetuer adipiscing elit. Rhoncus vehicula congue nibh interdum; consequat consectetur suscipit mollis. Aplacerat felis dignissim tristique vestibulum sollicitudin. Enim ridiculus per tristique augue morbi magna. Fringilla bibendum cras scelerisque dis dictumst inceptos senectus malesuada. Luctus vitae justo mattis porttitor praesent porttitor elit amet! Integer platea tempus platea elementum ullamcorper faucibus.
@@ -86,6 +88,7 @@ function DocsPage() {
                 </p>
             </main>
             
+            {/* table of contents */}
             <TableOfContents/>
 
 
