@@ -1,0 +1,36 @@
+.footerContainer {
+    width: 100%;
+    min-height: 150px;
+
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background-color: #000000;
+
+    padding: 50px 0;
+}
+
+.twoColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.linkbtnFooter {
+    /* button */
+    background-color: #d4d4d4;
+    color: #131313;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.linkbtnFooter:hover {
+    background-color: #858585;
+}
