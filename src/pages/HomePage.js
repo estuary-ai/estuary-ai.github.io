@@ -1,6 +1,6 @@
 import '../css/HomePage.css';
 import diagram from "../assets/Diagram.png";
-import architecture from "../assets/Estuary High Level Composite Structure.png";
+// import architecture from "../assets/Estuary High Level Composite Structure.png";
 import skelly from "../assets/SkellyChair.png";
 import teaserchair from "../assets/Teaser_chair.png";
 import teasermesh from "../assets/Teaser_mesh.png";
@@ -10,18 +10,20 @@ function HomePage() {
 
     return (
 
-        <div>
+        <div style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}>
 
+            {/* top title and links */}
             <div className='title'>
                 <h1>Estuary</h1>
                 <h2>A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents</h2>
                 {/* links to paper and github */}
-                <button className="linkbtn" href="https://arxiv.org/abs/2109.07372">
+                <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
                     Paper
-                </button>
-                <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" >GitHub</a>
+                </a>
+                <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noopener">GitHub</a>
             </div>
 
+            {/* image carousel */}
             <div className="hiderBox">
                 <div className='horScroll'>
                     <div className='imgWrapper' style={{marginLeft:"50vw"}}>
@@ -40,6 +42,7 @@ function HomePage() {
                 </div>
             </div>
 
+            {/* stuffs */}
             <div className='content'>
                 {/* spacer */}
                 <div style={{minHeight:"80px"}}/>
