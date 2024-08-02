@@ -20,7 +20,7 @@ function HomePage() {
                 <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
                     Paper
                 </a>
-                <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noopener">GitHub</a>
+                <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">GitHub</a>
             </div>
 
             {/* image carousel */}
