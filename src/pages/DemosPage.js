@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 function DemosPage() {
     return (
 
-        <div>
+        <div style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}>
             <Card style={{position: "inherit"}}>
                 <Card.Body>
                     <Card.Title>Demos</Card.Title>
