@@ -1,0 +1,27 @@
+.slideshow{
+    margin: auto;
+    margin-top: 20px;
+    height: 300px;
+    background-color: white;
+    width: 500px;
+    /* display: flex; */
+    /* gap: 10px; */
+}
+.slide-container{
+    padding: 20px;
+}
+
+.slide{
+    float: left;
+    margin: 20px;
+
+}
+
+.desc{
+    float: left;
+    margin: 20px;
+
+}
+img{
+    width: 300px;
+}

@@ -12,6 +12,8 @@ import backgroundVideo from "../assets/Title_Background.mp4";
 // https://youtu.be/oGGHE6YXBlo?si=Ux2qYWVjabYe3Vqi
 import backgroundVideo2 from "../assets/Title_Background_2.mp4";
 
+import Slideshow from '../components/Slideshow';
+
 
 function HomePage() {
     console.log('Current width:', window.innerWidth);
@@ -21,7 +23,7 @@ function HomePage() {
         <div className="wrapper">
             {/* top title and links */}
             <div className="header">
-                <video src={backgroundVideo2} class="bgv" width="600" height="300" autoplay="true" muted="true" loop="true"/>
+                <video src={backgroundVideo2} class="bgv" width="600" height="300" autoPlay="true" muted="true" loop="true"/>
                 <div className='title'>
                     <h1 className='mainTitle'>Estuary</h1>
                     <h2 className='subtitle'>A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents</h2>
@@ -40,7 +42,7 @@ function HomePage() {
             
 
             {/* image carousel */}
-            <div className="hiderBox">
+            {/* <div className="hiderBox">
                 <div className='horScroll'>
                     <div className='imgWrapper' style={{marginLeft:"50vw"}}>
                         <img src={skelly} alt='new' />
@@ -56,7 +58,8 @@ function HomePage() {
                     </div>
                     
                 </div>
-            </div>
+            </div> */}
+            <Slideshow />
 
             {/* stuffs */}
             <div className='content'>
