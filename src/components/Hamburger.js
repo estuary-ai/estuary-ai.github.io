@@ -23,7 +23,7 @@ function Hamburger({isOpen}) {
                     width: 2rem;
                     height: 0.25rem;
                     border-radius: 10px;
-                    background-color: black;
+                    background-color: white;
                     transform-origin: 0.2px;
                     transition: all 0.3s linear;
                 }

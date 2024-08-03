@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     /* height: 110vh; */
-    height: clamp(600px, 108vh, 1000px); 
+    height: clamp(200px, 108vh, 1000px); 
     /* Minimum size 800px, preferred size 110vh, maximum size 1300px */
     /* margin: 80px 30px 0px; */
 }

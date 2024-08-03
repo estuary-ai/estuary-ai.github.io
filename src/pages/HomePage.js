@@ -5,7 +5,13 @@ import skelly from "../assets/SkellyChair.png";
 import teaserchair from "../assets/Teaser_chair.png";
 import teasermesh from "../assets/Teaser_mesh.png";
 import teasermeta from "../assets/Teaser_meta.png";
+
+// https://youtu.be/xzgXtYz5lRY?si=yzZ9HIYOqF-jWU7-
 import backgroundVideo from "../assets/Title_Background.mp4";
+
+// https://youtu.be/oGGHE6YXBlo?si=Ux2qYWVjabYe3Vqi
+import backgroundVideo2 from "../assets/Title_Background_2.mp4";
+
 
 function HomePage() {
     console.log('Current width:', window.innerWidth);
@@ -15,7 +21,7 @@ function HomePage() {
         <div className="wrapper">
             {/* top title and links */}
             <div className="header">
-                <video src={backgroundVideo} class="bgv" width="600" height="300" autoplay="true" muted="true" loop="true"/>
+                <video src={backgroundVideo2} class="bgv" width="600" height="300" autoplay="true" muted="true" loop="true"/>
                 <div className='title'>
                     <h1 className='mainTitle'>Estuary</h1>
                     <h2 className='subtitle'>A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents</h2>
