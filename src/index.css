@@ -18,10 +18,11 @@ html {
   background-color: #282c34;
 
   overscroll-behavior-y: none;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

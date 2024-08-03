@@ -5,25 +5,33 @@ import skelly from "../assets/SkellyChair.png";
 import teaserchair from "../assets/Teaser_chair.png";
 import teasermesh from "../assets/Teaser_mesh.png";
 import teasermeta from "../assets/Teaser_meta.png";
+import backgroundVideo from "../assets/Title_Background.mp4";
 
 function HomePage() {
+    console.log('Current width:', window.innerWidth);
 
     return (
 
-        <div style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}>
-
+        <div className="wrapper">
             {/* top title and links */}
-            <div className='title'>
-                <h1>Estuary</h1>
-                <h2>A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents</h2>
-                {/* links to paper and github */}
-                <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
-                    Paper
-                </a>
-                <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
-                    GitHub
-                </a>
+            <div className="header">
+                <video src={backgroundVideo} class="bgv" width="600" height="300" autoplay="true" muted="true" loop="true"/>
+                <div className='title'>
+                    <h1 className='mainTitle'>Estuary</h1>
+                    <h2 className='subtitle'>A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents</h2>
+                    {/* links to paper and github */}
+                    <div className="buttonWrapper">
+                        <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
+                            Paper
+                        </a>
+                        <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
+                            GitHub
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
+            
 
             {/* image carousel */}
             <div className="hiderBox">

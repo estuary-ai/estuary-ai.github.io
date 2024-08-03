@@ -1,23 +1,67 @@
 
+.wrapper{
+    /* margin: 80px 30px 0px; */
+}
+.header{
+    position: relative;
+    overflow: hidden;
+    /* height: 110vh; */
+    height: clamp(600px, 108vh, 1000px); 
+    /* Minimum size 800px, preferred size 110vh, maximum size 1300px */
+    /* margin: 80px 30px 0px; */
+}
+
+.bgv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1; /* Place the video behind other content */
+    /* padding: 0px; */
+    top: 0px;
+  }
+  
 .title {
-    text-align: center;
-    padding: 40px;
+    /* margin: 80px 30px 0px; */
+    margin: 0px 30px;
+    /* margin-top: 55vh; */
+    /* margin-top: clamp(80px, 55vh, 600px); */
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px below */
+    animation: fadeInUp 1s forwards; /* Apply the animation */
+    position: absolute;
+    bottom: clamp(20px, 10vh, 200px);
+}
+@keyframes fadeInUp {
+    to {
+      opacity: 1; /* End fully visible */
+      transform: translateY(0); /* End at its original position */
+    }
 }
 
 .title h1{
     color: white;
-}
+    font-size: clamp(20px, 10vw, 200px);
 
+}
 .title h2 {
     color : white;
-    font-size: 30px;
+    /* font-size: 2.5vw; */
+    font-size: clamp(10px, 2.5vw, 100px);
     font-weight: 200;
     font-style: italic;
+}
+
+.buttonWrapper{
+    font-weight: bold;
 }
 
 .linkbtn {
     /* button */
     background-color: #d4d4d4;
+    /* background-color: #34251a; */
     color: #131313 ;
     border: none;
     padding: 10px 20px;
