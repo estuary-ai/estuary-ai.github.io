@@ -13,7 +13,7 @@ const images = [
     teasermeta,
 ];
 const descs=[
-    "desc1",
+    "desc1 asdfasdfasdfasdf",
     "desc2",
     "desc3",
     "desc4",
@@ -28,10 +28,20 @@ const Slideshow = () => {
             if(!isHovered){
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
             }
+            console.log(isHovered);
         }, 3000); // Change image every 3 seconds
   
       return () => clearInterval(interval);
-    }, []);
+    }, [isHovered]);
+
+    function changePage(amt){
+      if(currentIndex + amt <0){
+        setCurrentIndex(images.length-1);
+      }else{
+        setCurrentIndex((prevIndex) => (prevIndex + amt) % images.length);
+      }
+      
+    }
   
     return (
       <div className="slideshow" 
@@ -41,11 +51,15 @@ const Slideshow = () => {
           <img
             src={images[currentIndex]}
             className="slide active"
-            alt="Current slide"
+            alt={`Slide ${currentIndex}`}
           />
           <div className="desc">
             {descs[currentIndex]}
           </div>
+        </div>
+        <div className="leftRightWrapper">
+          { isHovered && <button className="prev" onClick={()=>{changePage(-1)}}>&lt;</button> }
+          { isHovered && <button className="next" onClick={()=>{changePage(1)}}>&gt;</button> }
         </div>
       </div>
     );
