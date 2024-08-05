@@ -44,7 +44,7 @@
       width: 1400px;
       height: 300px;
       font-size:15px;
-      background-color: red; 
+      /* background-color: red;  */
 
     }
     .textBlockTitle{
@@ -59,7 +59,7 @@
       width: 1200px;
       height: 200px;
       font-size:15px;
-      background-color: orange; 
+      /* background-color: orange;  */
 
     }
     .textBlockTitle{
@@ -74,7 +74,7 @@
       width: 1000px;
       height: 200px;
       font-size:15px;
-      background-color: black; 
+      /* background-color: black;  */
 
     }
     .textBlockTitle{
@@ -91,7 +91,7 @@
       width: 800px;
       height: 200px;
       font-size:15px;
-      background-color: green; 
+      /* background-color: green;  */
 
     }
     .textBlockTitle{
@@ -106,7 +106,7 @@
       width: 600px;
       height: 200px;
       font-size: 12px;
-      background-color: blue; 
+      /* background-color: blue;  */
 
     }
     .textBlockTitle{
@@ -121,7 +121,7 @@
         width: 400px;
         height: 200px;
         font-size: 10px; 
-        background-color: purple; 
+        /* background-color: purple;  */
         flex-direction: column; /* Stack children vertically */
 
     }
