@@ -1,7 +1,8 @@
 * {box-sizing: border-box}
 .mySlides {display: none}
-img {
+.slideImg {
     vertical-align: middle;
+    border-radius: 20px;
 }
 
 /* Slideshow container */
@@ -90,7 +91,17 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-  
+@media (max-width: 850px) {
+  .text {font-size: 10px}
+  .numbertext {font-size: 8px}
+}
+
+@media (max-width: 650px) {
+  .text {font-size: 9px}
+  .numbertext {font-size: 6px}
+
+}
+
 
 
 

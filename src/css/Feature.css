@@ -1,0 +1,142 @@
+/* ratio: 16:5 */
+
+.featureWrapper{
+    color: white;
+    width: 1600px;
+    height: 500px;
+    padding: 10px;   
+    /* background-color: red;  */
+    margin: auto;
+    margin-top: 20px;
+    /* border-top: 3px solid white;
+    border-bottom: 3px solid white; */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px below */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+}
+
+.featureWrapper.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+.featureText{
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+} 
+.featureSlideShow{
+    float: right;
+    width: 50%;
+}
+.featureTitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+.featureStatement{
+    font-size: 20px;
+}
+
+@media (max-width: 1650px) {
+    .featureWrapper {
+      width: 1400px;
+      height: 450px;
+      font-size:15px;
+      /* background-color: red;  */
+
+    }
+    .featureTitle{
+        font-size: 35px;
+    }
+    .featureStatement{
+        font-size: 17.5px;
+    }
+}
+@media (max-width: 1450px) {
+    .featureWrapper {
+      width: 1200px;
+      height: 375px;
+      font-size:15px;
+      /* background-color: orange;  */
+
+    }
+    .featureTitle{
+        font-size: 30px;
+    }
+    .featureStatement{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1250px) {
+    .featureWrapper {
+      width: 1000px;
+      height: 350px;
+      font-size:15px;
+      /* background-color: yellow;  */
+
+    }
+    .featureTitle{
+        font-size: 25px;
+    }
+    .featureStatement{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .featureWrapper {
+      width: 800px;
+      height: 350px;
+      font-size:15px;
+      /* background-color: green;  */
+
+    }
+    .featureTitle{
+        font-size: 25px;
+    }
+    .featureStatement{
+        font-size: 15px;
+    }
+}
+@media (max-width: 850px) {
+    .featureWrapper {
+      width: 640px;
+      height: 360px;
+      font-size: 12px;
+      /* background-color: blue;  */
+
+    }
+    .featureTitle{
+        font-size: 20px;
+    }
+    .featureStatement{
+        font-size: 12.5px;
+    }
+}
+@media (max-width: 650px) {
+    .featureWrapper {
+      width: 400px;
+      height: 250px;
+      font-size: 10px; 
+      /* background-color: purple;  */
+
+    }
+    .featureTitle{
+        font-size: 18px;
+    }
+    .featureStatement{
+        font-size: 10px;
+    }
+}
+
+
+
+

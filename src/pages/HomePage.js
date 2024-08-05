@@ -13,7 +13,8 @@ import backgroundVideo from "../assets/Title_Background.mp4";
 import backgroundVideo2 from "../assets/Title_Background_2.mp4";
 
 import Slideshow from '../components/Slideshow';
-import Mission from '../components/Mission';
+import Feature from '../components/Feature';
+import TextBlock from '../components/TextBlock';
 
 
 function HomePage() {
@@ -40,27 +41,12 @@ function HomePage() {
                     
                 </div>
             </div>
-            
+            <TextBlock title={"WHAT IS ESTUARY?"} content={"Taciti morbi nullam magnis feugiat vivamus. Dis at maecenas fames erat condimentum risus sed. Purus facilisi ipsum vestibulum maximus nostra et sit lectus. Massa nam mus pellentesque; aptent donec habitasse maximus. Nostra lobortis dolor pellentesque finibus vehicula, felis suscipit fermentum. Arcu volutpat tortor class vitae faucibus primis condimentum elementum."}/>
+            <TextBlock title={"OUR MISSION"} content={"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."}/>
 
-            {/* image carousel */}
-            {/* <div className="hiderBox">
-                <div className='horScroll'>
-                    <div className='imgWrapper' style={{marginLeft:"50vw"}}>
-                        <img src={skelly} alt='new' />
-                    </div>
-                    <div className='imgWrapper'>
-                        <img src={teaserchair} alt='new' />
-                    </div>
-                    <div className='imgWrapper'>
-                        <img src={teasermesh} alt='new' />
-                    </div>
-                    <div className='imgWrapper' style={{marginRight:"50vw"}}>
-                        <img src={teasermeta} alt='new' />
-                    </div>
-                    
-                </div>
-            </div> */}
-            <Mission />
+            <Feature />
+            <TextBlock title={"USE CASES"} content={"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."}/>
+            <TextBlock title={"COMMUNITY"} content={"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. ."}/>
 
             {/* stuffs */}
             <div className='content'>
