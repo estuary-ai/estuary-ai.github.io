@@ -1,0 +1,60 @@
+.sloganWrapper{
+    color: white;
+    width: 50%;
+    height: 400px;
+    padding: 10px;   
+    margin: auto;
+    margin-top: 20px;
+        
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px below */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+    
+}
+
+.sloganWrapper.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+@media (max-width: 1650px) {
+    .sloganWrapper{
+        font-size: 55px;
+    }
+}
+@media (max-width: 1450px) {
+    .sloganWrapper{
+        font-size: 50px;
+    }
+}
+@media (max-width: 1250px) {
+    .sloganWrapper{
+        font-size: 45px;
+    }
+}
+@media (max-width: 1050px) {
+    .sloganWrapper{
+        font-size: 40px;
+    }
+}
+@media (max-width: 850px) {
+    .sloganWrapper{
+        font-size: 35px;
+    }
+}
+@media (max-width: 650px) {
+    .sloganWrapper{
+        font-size: 30px;
+    }
+}

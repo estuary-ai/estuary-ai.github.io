@@ -17,20 +17,19 @@
     /* gap: 2vw; */
 
     opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start 20px below */
+    transform: translateX(-20px); /* Start 20px left */
     transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
 }
 
 .textBlockWrapper.fade-in {
     opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to original position */
+    transform: translateX(0); /* Move to original position */
 }
 
 .textBlockTitle{
     font-size: 40px;
     font-weight: bold;
     float: left;
-    /* background-color: red; */
     width: 20%;
 }
 .textBlockContent{
@@ -45,7 +44,7 @@
       width: 1400px;
       height: 300px;
       font-size:15px;
-      /* background-color: red;  */
+      background-color: red; 
 
     }
     .textBlockTitle{
@@ -60,7 +59,7 @@
       width: 1200px;
       height: 200px;
       font-size:15px;
-      /* background-color: orange;  */
+      background-color: orange; 
 
     }
     .textBlockTitle{
@@ -104,7 +103,7 @@
 }
 @media (max-width: 850px) {
     .textBlockWrapper {
-      width: 640px;
+      width: 600px;
       height: 200px;
       font-size: 12px;
       background-color: blue; 
@@ -119,16 +118,19 @@
 }
 @media (max-width: 650px) {
     .textBlockWrapper {
-      width: 400px;
-      height: 200px;
-      font-size: 10px; 
-      background-color: purple; 
+        width: 400px;
+        height: 200px;
+        font-size: 10px; 
+        background-color: purple; 
+        flex-direction: column; /* Stack children vertically */
 
     }
     .textBlockTitle{
+        width: 90%;
         font-size: 18px;
     }
     .textBlockContent{
+        width: 90%;
         font-size: 10px;
     }
 }

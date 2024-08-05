@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Slideshow from "./Slideshow";
-import '../css/Feature.css'; // Import the CSS file for styling
+import '../css/Slogan.css'; // Import the CSS file for styling
 
-const Feature = (props) => {
-    let title = props.title;
-    let featureStatement = props.content;
+const Slogan = (props) => {
+    let slogan = props.slogan; 
     const [isVisible, setIsVisible] = useState(false);
     const featureRef = useRef(null);
 
@@ -35,16 +33,10 @@ const Feature = (props) => {
     return ( 
         <div 
             ref={featureRef}
-            className={`featureWrapper ${isVisible ? 'fade-in' : ''}`}>
-            <div className="featureText">
-                <div className="featureTitle">{title}</div>
-                <div className="featureStatement">{featureStatement}</div>
-            </div>
-            <div className="featureSlideShow">
-                <Slideshow />
-            </div>
+            className={`sloganWrapper ${isVisible ? 'fade-in' : ''}`}>
+                <div className="slogan">{slogan}</div>
         </div>
      );
 }
  
-export default Feature;
+export default Slogan;
