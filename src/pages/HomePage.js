@@ -13,6 +13,7 @@ import backgroundVideo from "../assets/Title_Background.mp4";
 import backgroundVideo2 from "../assets/Title_Background_2.mp4";
 
 import Slideshow from '../components/Slideshow';
+import Mission from '../components/Mission';
 
 
 function HomePage() {
@@ -59,7 +60,7 @@ function HomePage() {
                     
                 </div>
             </div> */}
-            <Slideshow />
+            <Mission />
 
             {/* stuffs */}
             <div className='content'>

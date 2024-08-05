@@ -1,0 +1,127 @@
+/* ratio: 16:5 */
+
+.missionWrapper{
+    color: white;
+    width: 1600px;
+    height: 500px;
+    padding: 10px;   
+    /* background-color: red;  */
+    margin: auto;
+    margin-top: 20px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px below */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+}
+
+.missionWrapper.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+
+.missionText{
+    width: 45%;
+    float: left;
+    margin-right: 20px;
+} 
+.missionSlideShow{
+    float: right;
+    width: 50%;
+}
+.missionTitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+.missionStatement{
+    font-size: 20px;
+}
+
+@media (max-width: 1650px) {
+    .missionWrapper {
+      width: 1200px;
+      height: 375px;
+      font-size:15px;
+      background-color: orange; 
+
+    }
+    .missionTitle{
+        font-size: 25px;
+    }
+    .missionStatement{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1250px) {
+    .missionWrapper {
+      width: 1000px;
+      height: 350px;
+      font-size:15px;
+      background-color: yellow; 
+
+    }
+    .missionTitle{
+        font-size: 25px;
+    }
+    .missionStatement{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .missionWrapper {
+      width: 800px;
+      height: 350px;
+      font-size:15px;
+      background-color: green; 
+
+    }
+    .missionTitle{
+        font-size: 25px;
+    }
+    .missionStatement{
+        font-size: 15px;
+    }
+}
+@media (max-width: 850px) {
+    .missionWrapper {
+      width: 640px;
+      height: 360px;
+      font-size: 12px;
+      background-color: blue; 
+
+    }
+    .missionTitle{
+        font-size: 20px;
+    }
+    .missionStatement{
+        font-size: 12.5px;
+    }
+}
+@media (max-width: 650px) {
+    .missionWrapper {
+      width: 480px;
+      height: 250px;
+      font-size: 10px; 
+      background-color: purple; 
+
+    }
+    .missionTitle{
+        font-size: 18px;
+    }
+    .missionStatement{
+        font-size: 10px;
+    }
+}
+
+
+
+
