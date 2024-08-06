@@ -23,9 +23,10 @@ function Footer() {
                     <div>
                         <p>Contact Us</p>
                         {/* TODO: Add discord invite link here */}
-                        <a className="linkbtnFooter" href="https://discord.com" target="_blank" rel="noreferrer">Discord</a>
+                        <a className="linkbtnFooter" href="https://discord.gg/2Nazr9w25n" target="_blank" rel="noreferrer">Discord</a>
                         {/* TODO: Add email here */}
-                        <a className="linkbtnFooter" href="mailto:" target="_blank" rel="noreferrer">Email</a>
+                        <a className="linkbtnFooter" href="mailto:estuary.ai@gmail.com" target="_blank" rel="noreferrer">Email</a>
+                        <p>estuary [dot] ai [at] gmail [dot] com</p>
                     </div>
 
                 </div>
