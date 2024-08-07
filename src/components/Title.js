@@ -1,0 +1,35 @@
+import React, { useState, useEffect, useRef } from 'react';
+import '../css/Title.css'; // Import the CSS file for styling
+
+const Title = (props) => {
+    let mainTitle = props.mainTitle;
+    let subtitle = props.subtitle;
+    let bgv = props.bgv;
+    let showButtons = props.showButtons
+
+    return ( 
+        <div className="header">
+                <video src={bgv} class="bgv" width="600" height="300" autoPlay="true" muted="true" loop="true"/>
+                <div className='title'>
+                    <h1 className='mainTitle'>{mainTitle}</h1>
+                    <h2 className='subtitle'>{subtitle}</h2>
+                    {/* links to paper and github */}
+                    {
+                        showButtons &&
+                        <div className="buttonWrapper">
+                            <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
+                                Paper
+                            </a>
+                            <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
+                                GitHub
+                            </a>
+                        </div>
+                    }
+                    
+                    
+                </div>
+            </div>
+     );
+}
+ 
+export default Title;

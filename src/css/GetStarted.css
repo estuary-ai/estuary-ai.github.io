@@ -1,0 +1,164 @@
+/* ratio: 16:5 */
+
+.getStartedWrapper{
+    color: white;
+    font-style: italic;
+    width: 1600px;
+    height: 600px;
+    padding: 10px;   
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+    
+    
+    background-image: url('../assets/Background_img_3.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px bottom */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+}
+
+.getStartedWrapper.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.getStartedContent{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+.getStartedButtWrapper{
+    font-size: 20px;
+}
+
+.getStartedButt{
+    /* button */
+    background-color: #d4d4d4;
+    /* background-color: #34251a; */
+    color: #131313 ;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 10px 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.getStartedButt:hover {
+    background-color: #858585;
+}
+
+
+@media (max-width: 1650px) {
+    .getStartedWrapper {
+      width: 1400px;
+      height: 500px;
+      font-size:15px;
+      /* background-color: red;  */
+
+    }
+    .getStartedContent{
+        font-size: 35px;
+    }
+    .getStartedButtWrapper{
+        font-size: 17.5px;
+    }
+}
+@media (max-width: 1450px) {
+    .getStartedWrapper {
+      width: 1200px;
+      height: 400px;
+      font-size:15px;
+      /* background-color: orange;  */
+
+    }
+    .getStartedContent{
+        font-size: 30px;
+    }
+    .getStartedButtWrapper{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1250px) {
+    .getStartedWrapper {
+      width: 1000px;
+      height: 300px;
+      font-size:15px;
+      /* background-color: black;  */
+
+    }
+    .getStartedContent{
+        font-size: 25px;
+    }
+    .getStartedButtWrapper{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .getStartedWrapper {
+      width: 800px;
+      height: 300px;
+      font-size:15px;
+      /* background-color: green;  */
+
+    }
+    .getStartedContent{
+        font-size: 25px;
+    }
+    .getStartedButtWrapper{
+        font-size: 15px;
+    }
+}
+@media (max-width: 850px) {
+    .getStartedWrapper {
+      width: 600px;
+      height: 300px;
+      font-size: 12px;
+      /* background-color: blue;  */
+
+    }
+    .getStartedContent{
+        font-size: 20px;
+    }
+    .getStartedButtWrapper{
+        font-size: 12.5px;
+    }
+}
+@media (max-width: 650px) {
+    .getStartedWrapper {
+        width: 400px;
+        height: 300px;
+        font-size: 10px; 
+        /* background-color: purple;  */
+        flex-direction: column; /* Stack children vertically */
+
+    }
+    .getStartedContent{
+        width: 90%;
+        font-size: 18px;
+    }
+    .getStartedButtWrapper{
+        width: 90%;
+        font-size: 10px;
+    }
+}
+
+
+
+

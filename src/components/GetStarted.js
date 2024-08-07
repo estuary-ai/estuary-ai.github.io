@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import Slideshow from "./Slideshow";
-import '../css/Feature.css'; // Import the CSS file for styling
+import React, { useState, useEffect, useRef } from 'react';
+import '../css/GetStarted.css'; // Import the CSS file for styling
 
-const Feature = (props) => {
-    let title = props.title;
-    let featureStatement = props.content;
-    let slides = props.slides;
+
+const GetStarted = () => {
+
     const [isVisible, setIsVisible] = useState(false);
     const featureRef = useRef(null);
 
@@ -36,16 +34,17 @@ const Feature = (props) => {
     return ( 
         <div 
             ref={featureRef}
-            className={`featureWrapper`}>
-            <div className={`featureText ${isVisible ? 'fade-in' : ''}`}>
-                <div className="featureTitle">{title}</div>
-                <div className="featureStatement">{featureStatement}</div>
-            </div>
-            <div className="featureSlideShow">
-                <Slideshow slides={slides}/>
-            </div>
+            className={`getStartedWrapper ${isVisible ? 'fade-in' : ''}`}>
+                <div className="getStartedText">
+                    <div className="getStartedContent">Get started with Estuary <br/> Be part of the community today!</div>
+                    <div className="getStartedButtons">
+                        <button className="getStartedButt">Get a demo</button>
+                        <button className="getStartedButt">Another button</button>
+                    </div>
+                </div>
+                
         </div>
      );
 }
  
-export default Feature;
+export default GetStarted;

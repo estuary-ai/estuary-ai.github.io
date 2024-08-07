@@ -1,18 +1,22 @@
 import { Card } from 'react-bootstrap';
+import Title from '../components/Title';
+import GetStarted from '../components/GetStarted';
+import backgroundVideo from "../assets/Title_Background.mp4";
+
 
 function DemosPage() {
     return (
-
-        <div style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}>
-            <Card style={{position: "inherit"}}>
+        // style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}
+        <div>
+            {/* <Card style={{position: "inherit"}}>
                 <Card.Body>
                     <Card.Title>Demos</Card.Title>
                     <Card.Text>
                         Demo videos and papers to be added soon!
                     </Card.Text>
                 </Card.Body>
-            </Card>
-
+            </Card> */}
+            <Title mainTitle={"Demo"} subtitle={"Demo videos and papers to be added soon!"} bgv={backgroundVideo} showButtons={false}/>
             <iframe 
                 width="560" 
                 height="315" 
@@ -23,6 +27,8 @@ function DemosPage() {
                 referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen>
             </iframe>
+            <GetStarted />
+
         </div>
 
     )

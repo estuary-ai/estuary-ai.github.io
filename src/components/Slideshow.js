@@ -1,21 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import slidehow from '../css/Slideshow.css'; // Import the CSS file for styling
-import skelly from "../assets/SkellyChair.png";
-import teaserchair from "../assets/Teaser_chair.png";
-import teasermesh from "../assets/Teaser_mesh.png";
-import teasermeta from "../assets/Teaser_meta.png";
 
-const Slideshow = () => {
+const Slideshow = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const slideRef = useRef([]);
 
-  const slides = [
-    { id: 1, image: skelly, desc: "desc1 asdfasdfasdf" },
-    { id: 2, image: teaserchair, desc: "desc2 qwerqwerqwer" },
-    { id: 3, image: teasermesh, desc: "desc3 zxcvzxcvzxcv" },
-    { id: 4, image: teasermeta, desc: "desc4 poiupoijpoiu" },
-  ];
-
+  const slides = props.slides
   useEffect(() => {
     showSlides(slideIndex);
   }, [slideIndex]);

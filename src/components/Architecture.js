@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Slideshow from "./Slideshow";
-import '../css/Feature.css'; // Import the CSS file for styling
+import '../css/Architecture.css'; // Import the CSS file for styling
 
-const Feature = (props) => {
+const Architecture = (props) => {
     let title = props.title;
-    let featureStatement = props.content;
-    let slides = props.slides;
+    let content = props.content;
+    let diagram = props.img;
+
     const [isVisible, setIsVisible] = useState(false);
     const featureRef = useRef(null);
-
     useEffect(() => {
         const observer = new IntersectionObserver(
           (entries) => {
@@ -36,16 +35,16 @@ const Feature = (props) => {
     return ( 
         <div 
             ref={featureRef}
-            className={`featureWrapper`}>
-            <div className={`featureText ${isVisible ? 'fade-in' : ''}`}>
-                <div className="featureTitle">{title}</div>
-                <div className="featureStatement">{featureStatement}</div>
-            </div>
-            <div className="featureSlideShow">
-                <Slideshow slides={slides}/>
-            </div>
+            className={`archWrapper`}>
+                
+                <img src={diagram} alt='diagram' className="archImg"/>
+                <div className={`archText ${isVisible ? 'fade-in' : ''}`}>
+                    <div className="archTitle">{title}</div>
+                    <div className="archStatement">{content}</div>
+                </div>
+                
         </div>
      );
 }
  
-export default Feature;
+export default Architecture; 
