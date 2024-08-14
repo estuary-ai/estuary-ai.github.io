@@ -28,6 +28,7 @@ const Headings = ({ headings, activeId }) => (
             {heading.items.map((child) => (
               <li
                 key={child.id}
+                id={child.id}
                 className={child.id === activeId ? "active" : ""}
               >
                 <a
@@ -112,12 +113,24 @@ const useIntersectionObserver = (setActiveId) => {
       const getIndexFromId = (id) =>
         headingElements.findIndex((heading) => heading.id === id);
 
+      // remove all headings with empty ids
+      for (let i = 0; i < visibleHeadings.length; i++) {
+        if (!visibleHeadings[i].target.id) {
+          visibleHeadings.splice(i, 1);
+        }
+      }
+
       // If there is only one visible heading, this is our "active" heading
       if (visibleHeadings.length === 1) {
+        console.log("=========== Set to only visible:")
+        console.log(visibleHeadings[0].target.id);
         setActiveId(visibleHeadings[0].target.id);
         // If there is more than one visible heading,
         // choose the one that is closest to the top of the page
       } else if (visibleHeadings.length > 1) {
+        console.log("========== Two+ visible:")
+        console.log(visibleHeadings[0].target.id);
+        console.log(visibleHeadings[1].target.id);
         const sortedVisibleHeadings = visibleHeadings.sort(
           (a, b) => getIndexFromId(a.target.id) > getIndexFromId(b.target.id)
         );

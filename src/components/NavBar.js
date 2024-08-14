@@ -24,14 +24,21 @@ function NavBar() {
                 <li><Link to="/docs">Docs</Link></li>
                 <li><Link to="/demos">Demos</Link></li>
             </ul>
-            <div className="hamburger" onClick={toggleHamburger}>
-                <Hamburger isOpen={isHamOpen} />
+            <div className="hamContainer">
+                <div className="hamburger" onClick={toggleHamburger}>
+                    <Hamburger isOpen={isHamOpen} />
+                </div>
             </div>
             <style js>{`
                 {/* when screen width small */}
                 @media (max-width: 767px){
-                    .hamburger{
+                    .hamContainer {
                         width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .hamburger{
+                        width: fit-content;
                         display: flex;
                         margin: 0;
                         padding: 8px;

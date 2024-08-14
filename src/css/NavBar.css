@@ -35,6 +35,10 @@
     display:none;
 } 
 
+.hamContainer{
+    width: 0;
+}
+
 .navigation a {
     text-decoration: none !important;
     color: white !important; 

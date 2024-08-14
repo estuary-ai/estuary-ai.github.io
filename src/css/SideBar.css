@@ -28,6 +28,10 @@
     color: rgb(255, 91, 233);
 }
 
+.sidebarCollapsed {
+    display: none;
+}
+
 /* when screen small */
 @media (max-width: 767px){
     .sidebarContainer{
