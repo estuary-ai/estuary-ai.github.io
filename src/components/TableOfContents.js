@@ -16,7 +16,7 @@ const Headings = ({ headings, activeId }) => (
             // const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
             // window.scrollTo({top: y, behavior: 'smooth'});
             document.querySelector(`#${heading.id}`).scrollIntoView({
-                block: "start",
+                // block: "start",
                 behavior: "smooth"
             });
           }}
@@ -40,7 +40,7 @@ const Headings = ({ headings, activeId }) => (
                     // const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
                     // window.scrollTo({top: y, behavior: 'smooth'});
                     document.querySelector(`#${child.id}`).scrollIntoView({
-                        block: "start",
+                        // block: "start",
                         behavior: "smooth"
                     });
                   }}
@@ -128,9 +128,12 @@ const useIntersectionObserver = (setActiveId) => {
         // If there is more than one visible heading,
         // choose the one that is closest to the top of the page
       } else if (visibleHeadings.length > 1) {
-        console.log("========== Two+ visible:")
-        console.log(visibleHeadings[0].target.id);
-        console.log(visibleHeadings[1].target.id);
+        console.log("========== " + visibleHeadings.length + " visible:")
+        for (let i = 0; i < visibleHeadings.length; i++) {
+          if (visibleHeadings[i].target.id) {
+            console.log(visibleHeadings[i].target.id);
+          }
+        }
         const sortedVisibleHeadings = visibleHeadings.sort(
           (a, b) => getIndexFromId(a.target.id) > getIndexFromId(b.target.id)
         );
@@ -139,7 +142,7 @@ const useIntersectionObserver = (setActiveId) => {
       }
     };
 
-    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "500px" });
+    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "100px" });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
 
