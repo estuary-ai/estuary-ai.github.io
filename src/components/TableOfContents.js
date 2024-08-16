@@ -122,18 +122,18 @@ const useIntersectionObserver = (setActiveId) => {
 
       // If there is only one visible heading, this is our "active" heading
       if (visibleHeadings.length === 1) {
-        console.log("=========== Set to only visible:")
-        console.log(visibleHeadings[0].target.id);
+        // console.log("=========== Set to only visible:")
+        // console.log(visibleHeadings[0].target.id);
         setActiveId(visibleHeadings[0].target.id);
         // If there is more than one visible heading,
         // choose the one that is closest to the top of the page
       } else if (visibleHeadings.length > 1) {
-        console.log("========== " + visibleHeadings.length + " visible:")
-        for (let i = 0; i < visibleHeadings.length; i++) {
-          if (visibleHeadings[i].target.id) {
-            console.log(visibleHeadings[i].target.id);
-          }
-        }
+        // console.log("========== " + visibleHeadings.length + " visible:")
+        // for (let i = 0; i < visibleHeadings.length; i++) {
+        //   if (visibleHeadings[i].target.id) {
+        //     console.log(visibleHeadings[i].target.id);
+        //   }
+        // }
         const sortedVisibleHeadings = visibleHeadings.sort(
           (a, b) => getIndexFromId(a.target.id) > getIndexFromId(b.target.id)
         );
