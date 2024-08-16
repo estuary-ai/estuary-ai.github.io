@@ -142,7 +142,7 @@ const useIntersectionObserver = (setActiveId) => {
       }
     };
 
-    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "100px" });
+    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "0px" });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
 

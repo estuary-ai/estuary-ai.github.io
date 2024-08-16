@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Layout from "./components/BaseLayout";
 import HomePage from "./pages/HomePage";
-import DocsPage from "./pages/DocsPage";
+import DocsLandingPage from "./pages/DocsLandingPage";
 import DemosPage from "./pages/DemosPage";
 import NoPage from "./pages/NoPage";
 
@@ -26,7 +26,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="docs" element={<DocsPage />} />
+          <Route path="docs" element={<DocsLandingPage />} />
           <Route path="docs/quickstart" element={<QuickStart />} />
           <Route path="demos" element={<DemosPage />} />
           <Route path="*" element={<NoPage />} />
