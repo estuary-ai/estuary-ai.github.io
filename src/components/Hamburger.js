@@ -9,7 +9,7 @@ function Hamburger({isOpen}) {
                 <div className="burger burger3" />
             </div>
 
-            <style jsx>{`
+            <style jsx="true">{`
                 .ham{
                     width: 2rem;
                     height: 2rem;

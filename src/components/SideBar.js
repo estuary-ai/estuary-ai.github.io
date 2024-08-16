@@ -19,7 +19,7 @@ function SideBar() {
             <div className='sidebarCollapsed' onClick={toggleSide}>
             </div>
 
-            <style jsx>{`
+            <style jsx="true">{`
                 /* when screen small */
                 @media (max-width: 767px){
                     .sidebarCollapsed{

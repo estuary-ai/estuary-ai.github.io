@@ -29,7 +29,7 @@ function NavBar() {
                     <Hamburger isOpen={isHamOpen} />
                 </div>
             </div>
-            <style js>{`
+            <style js="true">{`
                 {/* when screen width small */}
                 @media (max-width: 767px){
                     .hamContainer {
