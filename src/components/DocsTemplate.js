@@ -4,6 +4,7 @@ import '../css/DocsTemplate.css';
 
 import TableOfContents from './TableOfContents';
 import SideBar from './SideBar';
+import DocsNavBar from './DocsNavBar';
 
 // ********* TEMPLATE *********
 /**
@@ -18,8 +19,11 @@ function DocsTemplate({PageName, Content}) {
             <SideBar currentPageName={PageName}/>
 
             <div className='paddedContainer'>
+                {/* top navbar for docs for mobile */}
+                {/* <DocsNavBar /> */}
+
                 <main className='mainContent'>
-                    {/* actual content using h2 and h3 */}
+                    {/* actual content with titles using h2 and h3 */}
                     <Content/>
 
                 </main>
