@@ -15,7 +15,7 @@ html {
   margin: 0;
   min-height: 100%;
   width: 100%;
-  background-color: #282c34;
+  background-color: var(--dark-gray);
 
   overscroll-behavior-y: none;
   /* overflow: scroll; */
@@ -26,3 +26,13 @@ code {
     monospace;
 }
 
+:root {
+  --black: #13110C;
+  --white: #E2E1DD;
+  --light-gray: #969696;
+  --middle-gray: #252627;
+  --dark-gray: #1b1b1b;
+  --green: #61852B;
+  --blue: #547FE7;
+  --orange: #CF8E55;
+}

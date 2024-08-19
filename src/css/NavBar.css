@@ -4,7 +4,7 @@
     height: 50px;
     flex-direction: row;
     /* background-color:lightslategray; */
-    background-color: black;
+    background-color: var(--black);
 
     margin-bottom: 10px;
 
@@ -29,6 +29,10 @@
 .navigation ul li{
     list-style-type: none;
     padding-right: 40px;
+}
+
+.navigation a:hover{
+    color: var(--green) !important;
 }
 
 .hamburger{

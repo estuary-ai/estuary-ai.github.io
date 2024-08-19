@@ -35,8 +35,10 @@ function SideBar({currentPageName}) {
                     }
                 }
 
+                /* highlight the current page in sidebar */
                 #${currentPageName}{
-                    background-color: rgb(255, 0, 0);
+                    background-color: var(--orange);
+                    color: var(--white);
                 }
                                 
             `}</style>

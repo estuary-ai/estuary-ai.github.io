@@ -15,13 +15,15 @@ import NoPage from "./pages/NoPage";
 import QuickStart from "./pages/Docs/QuickStart";
 
 // TODO: reference this if having redirect or routing issues!!! (also possibly for pages loading in the middle)
-  // need to do scrollToTop() in the Layout component or smth
-  // https://stackoverflow.com/questions/73364038/github-pages-is-not-loading-subpage-even-though-url-is-correct
-  // more explanation here: https://github.com/orgs/community/discussions/36908
+// need to do scrollToTop() in the Layout component or smth
+// https://stackoverflow.com/questions/73364038/github-pages-is-not-loading-subpage-even-though-url-is-correct
+// more explanation here: https://github.com/orgs/community/discussions/36908
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -33,6 +35,7 @@ root.render(
         </Route>
       </Routes>
     </Router>
+
   </React.StrictMode>
 );
 

@@ -7,10 +7,10 @@
     max-height: calc(100vh - 50px);
     overflow: auto;
 
-    min-width: 150px;
-    background-color: beige;
+    min-width: 190px;
+    background-color: var(--middle-gray);
     
-    padding: 40px 0 0 30px;
+    padding: 40px 0px 0 20px;
 
     display: flex;
     flex-direction: column;
@@ -21,11 +21,15 @@
 
 .sidebarContainer a {
     text-decoration: none;
-    color: black;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+    font-weight: 100;
 }
 
 .sidebarContainer a:hover {
-    color: rgb(255, 91, 233);
+    color: var(--green);
+    font-weight: 400;
 }
 
 .sidebarCollapsed {
