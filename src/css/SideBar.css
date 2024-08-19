@@ -1,10 +1,10 @@
 .sidebarContainer {
     position: sticky;
     position: -webkit-sticky; /* For Safari */
-    top: 50px; /* How far down the page you want your ToC to live */
+    top: 50px; /* How far down the page you want your thing to live */
   
     /* Give table of contents a scrollbar */
-    max-height: calc(100vh - 65px);
+    max-height: calc(100vh - 50px);
     overflow: auto;
 
     min-width: 150px;
