@@ -46,6 +46,7 @@
 .navigation a {
     text-decoration: none !important;
     color: white !important; 
+    font-weight: 80;
 }
 
 
