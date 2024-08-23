@@ -32,9 +32,7 @@
     font-weight: 400;
 }
 
-.sidebarCollapsed {
-    display: none;
-}
+
 
 /* when screen small */
 @media (max-width: 767px){

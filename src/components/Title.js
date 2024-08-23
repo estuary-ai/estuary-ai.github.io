@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+// import React, { useState, useEffect, useRef } from 'react';
 import '../css/Title.css'; // Import the CSS file for styling
 
 const Title = (props) => {
@@ -17,11 +17,11 @@ const Title = (props) => {
                     {
                         showButtons &&
                         <div className="buttonWrapper">
-                            <a className="linkbtn" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
-                                Paper
+                            <a className="linkbtnFooter arxivLogo" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
+                                {/* Paper */}
                             </a>
-                            <a className="linkbtn" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
-                                GitHub
+                            <a className="linkbtnFooter githubLogo" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
+                                {/* GitHub */}
                             </a>
                         </div>
                     }

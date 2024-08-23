@@ -16,11 +16,13 @@ function DocsTemplate({PageName, Content}) {
 
     return (
         <div className='pageContainer'>
+            {/* collapsible side navbar for docs for mobile */}
+            <DocsNavBar />
+
+            {/* non collapsible side navbar for docs */}
             <SideBar currentPageName={PageName}/>
 
             <div className='paddedContainer'>
-                {/* top navbar for docs for mobile */}
-                {/* <DocsNavBar /> */}
 
                 <main className='mainContent'>
                     {/* actual content with titles using h2 and h3 */}

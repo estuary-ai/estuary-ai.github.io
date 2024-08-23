@@ -18,18 +18,22 @@ function NavBar() {
     }
 
     return (
-        <div className="navigation">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/docs">Docs</Link></li>
-                <li><Link to="/demos">Demos</Link></li>
-            </ul>
-            <div className="hamContainer">
-                <div className="hamburger" onClick={toggleHamburger}>
-                    <Hamburger isOpen={isHamOpen} />
-                </div>
+        <div>
+            <div>
+                <p>asdf</p>
             </div>
-            <style js="true">{`
+            <div className="navigation">
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/docs">Docs</Link></li>
+                    <li><Link to="/demos">Demos</Link></li>
+                </ul>
+                <div className="hamContainer">
+                    <div className="hamburger" onClick={toggleHamburger}>
+                        <Hamburger isOpen={isHamOpen} />
+                    </div>
+                </div>
+                <style js="true">{`
                 {/* when screen width small */}
                 @media (max-width: 767px){
                     .hamContainer {
@@ -60,6 +64,8 @@ function NavBar() {
                     }
                 }
             `}</style>
+            </div>
+
         </div>
     )
 

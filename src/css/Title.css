@@ -73,5 +73,5 @@
 }
 
 .linkbtn:hover {
-    background-color: #858585;
+    background-color: var(--green);
 }
