@@ -9,23 +9,19 @@ function Footer() {
                 <div className='twoColumn'>
                     {/* left column */}
                     <div>
-                        <p>Resources</p>
-                        <a className="linkbtnFooter" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
-                            Paper
-                        </a>
-                        <a className="linkbtnFooter" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
-                            GitHub
-                        </a>
+                        <p className="footerTitle">Resources</p>
+                        <a className="linkbtnFooter arxivLogo" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer" />
+                        <a className="linkbtnFooter githubLogo" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer" />
 
                     </div>
 
                     {/* right column */}
                     <div>
-                        <p>Contact Us</p>
-                        {/* TODO: Add discord invite link here */}
-                        <a className="linkbtnFooter" href="https://discord.gg/2Nazr9w25n" target="_blank" rel="noreferrer">Discord</a>
-                        {/* TODO: Add email here */}
-                        <a className="linkbtnFooter" href="mailto:estuary.ai@gmail.com" target="_blank" rel="noreferrer">Email</a>
+                        <p className='footerTitle'>Contact Us</p>
+                        {/* Discord invite link */}
+                        <a className="linkbtnFooter discordLogo" href="https://discord.gg/2Nazr9w25n" target="_blank" rel="noreferrer" />
+                        {/* email */}
+                        <a className="linkbtnFooter emailLogo" href="mailto:estuary.ai@gmail.com" target="_blank" rel="noreferrer" />
                         <p>estuary [dot] ai [at] gmail [dot] com</p>
                     </div>
 

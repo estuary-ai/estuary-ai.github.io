@@ -3,7 +3,7 @@
     min-height: 150px;
 
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     background-color: var(--dark-gray);
 
@@ -11,6 +11,8 @@
 }
 
 .twoColumn {
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -33,4 +35,89 @@
 
 .linkbtnFooter:hover {
     background-color: #858585;
+}
+
+.arxivLogo {
+    width: 80px;
+    height: 30px;
+    background: url(../assets/arxiv_logo.png) no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+
+    margin-bottom: 13px;
+
+    border: 1px solid var(--white);
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.arxivLogo:hover {
+    background-color: var(--dark-gray);
+    border: 1px solid var(--green);
+}
+
+.githubLogo {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/github_logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+.githubLogo:hover {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/github_logo_white.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.discordLogo {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/discord_logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
+
+.discordLogo:hover {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/discord_logo_white.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.emailLogo {
+    width: 40px;
+    height: 33px;
+    background: url(../assets/gmail_logo.png) no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+
+    border: 0.2px solid var(--white);
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-bottom: 14px;
+}
+
+.emailLogo:hover {
+    background-color: var(--dark-gray);
+    border: 1px solid var(--green);
+}
+
+.footerTitle {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
 }
