@@ -14,6 +14,8 @@ import NoPage from "./pages/NoPage";
 
 import QuickStart from "./pages/Docs/QuickStart";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 // TODO: reference this if having redirect or routing issues!!! (also possibly for pages loading in the middle)
 // need to do scrollToTop() in the Layout component or smth
 // https://stackoverflow.com/questions/73364038/github-pages-is-not-loading-subpage-even-though-url-is-correct
@@ -25,6 +27,8 @@ root.render(
   <React.StrictMode>
 
     <Router>
+
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
