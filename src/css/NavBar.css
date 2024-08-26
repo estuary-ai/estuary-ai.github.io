@@ -31,10 +31,6 @@
     padding-right: 40px;
 }
 
-.navigation a:hover{
-    color: var(--middle-green) !important;
-}
-
 .hamburger{
     display:none;
 } 
@@ -47,6 +43,15 @@
     text-decoration: none !important;
     color: white !important; 
     font-weight: 80;
+    
+    transition: all 0.3s;
+    --webkit-transition: all 0.3s;
+    --ms-transition: all 0.3s;
 }
 
+.navigation a:hover{
+    color: var(--middle-green) !important;
+    font-size: 1.2em;
+    font-weight: 400;
+}
 

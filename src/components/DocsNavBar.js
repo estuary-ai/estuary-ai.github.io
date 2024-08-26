@@ -1,9 +1,7 @@
 import "../css/DocsNavBar.css";
 
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import DocsLinks from "./DocsLinks";
-import Hamburger from "./Hamburger";
 
 function DocsNavBar({ currentPageName }) {
 
@@ -23,9 +21,9 @@ function DocsNavBar({ currentPageName }) {
         <div>
             <div className={`transparentBackground ${isSideOpen ? 'active' : ''}`} onClick={toggleSide}></div>
             <div className={`docsNavBarContainer ${isSideOpen ? 'active' : ''}`}>
-                <p onClick={toggleSide}> 
+                <button onClick={toggleSide}> 
                     {symbol} 
-                </p>
+                </button>
                 <div className={`divider ${isSideOpen ? 'active' : ''}`}/>
                 <div className='sidebarCollapsed'>
                     <DocsLinks />
@@ -65,8 +63,7 @@ function DocsNavBar({ currentPageName }) {
                         margin: 0;
                         padding: 10px 0 0 20px;
 
-                        {/* don't want scrollbar appearing accidentally during height transition */}
-                        animation-duration: 0.5s;
+                        animation-duration: 1s; /* don't want scroll bar appearing until after height transition */
                         animation-name: delay-overflow;
                         animation-iteration-count: 1;
                         animation-timing-function: linear;
@@ -85,22 +82,35 @@ function DocsNavBar({ currentPageName }) {
                         padding: 10px;
                         border-radius: 15px 0 0 15px;
                         font-weight: 100;
+
+                        transition: all 0.3s;
+                        --webkit-transition: all 0.3s;
+                        -ms-transition: all 0.3s;
                     }
 
                     .docsNavBarContainer a:hover{
                         color: var(--middle-green);
                         font-weight: 400;
+                        font-size: 1.1em;
                     }
 
-                    .docsNavBarContainer p{
+                    .docsNavBarContainer button{
+                        all: unset;
                         padding-left: ${isSideOpen ? 'calc(80% - 10px)' : '10px'};
                         padding-right: 10px;
                         padding-top: ${isSideOpen ? '10px' : '3px'};
                         padding-bottom: 10px;
 
-                        transition: all 0.3s linear;
-                        --webkit-transition: all 0.3s linear;
-                        -ms-transition: all 0.3s linear;
+                        transition: all 0.3s;
+                        --webkit-transition: all 0.3s;
+                        -ms-transition: all 0.3s;
+                    }
+
+                    .docsNavBarContainer button:hover{
+                        color: var(--middle-green);
+                        font-weight: 800;
+                        font-size: 1.3em;
+                        margin-top: ${isSideOpen ? '-1px' : '-4px'};
                     }
 
                     .sidebarCollapsed{

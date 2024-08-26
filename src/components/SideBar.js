@@ -6,7 +6,7 @@ function SideBar({ currentPageName }) {
 
     return (
         <div className="sidebarContainer">
-            <DocsLinks />
+            <DocsLinks/>
 
             <style jsx="true">{`
 
