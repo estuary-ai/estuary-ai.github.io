@@ -8,6 +8,12 @@
 /* all h2 and h3 headers */
 .mainContent h2, h3 {
     scroll-margin-top: 60px;
+
+    color: var(--pink);
+}
+
+.mainContent h1 {
+    color: var(--orange);
 }
 
 .pageContainer {

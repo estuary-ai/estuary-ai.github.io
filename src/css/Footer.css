@@ -5,7 +5,7 @@
     text-align: center;
     font-size: 14px;
     color: #fff;
-    background-color: var(--dark-gray);
+    background: var(--black);
 
     padding: 50px 0;
 }
@@ -54,7 +54,7 @@
 }
 
 .arxivLogo:hover {
-    background-color: var(--dark-gray);
+    background: var(--dark-gray);
     border: 1px solid var(--middle-green);
 }
 
@@ -113,7 +113,7 @@
 }
 
 .emailLogo:hover {
-    background-color: var(--dark-gray);
+    background: var(--dark-gray);
     /* border: 1px solid var(--middle-green); */
 }
 

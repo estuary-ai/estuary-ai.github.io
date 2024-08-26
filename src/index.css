@@ -15,7 +15,7 @@ html {
   margin: 0;
   min-height: 100%;
   width: 100%;
-  background-color: var(--dark-gray);
+  background: var(--dark-gray);
 
   overscroll-behavior-y: none;
   /* overflow: scroll; */
@@ -27,22 +27,34 @@ code {
 }
 
 :root {
-  --black: #13110C;
-  --white: #E2E1DD;
+  --black: #001420df;
+  --white: #D6DCF9;
 
   --light-gray: #969696;
-  --middle-gray: #252627;
-  --dark-gray: #1b1b1b;
+  --middle-gray: #142841;
+  --dark-gray: linear-gradient(180deg, #161e1c 0%, #071924 100%);
 
   --light-green: #ABBB7D;
-  --middle-green: #61852B;
+  --middle-green: #94B536; 
   --dark-green: #283B35;
 
   --light-blue: #92CCEA;
   --middle-blue: #547FE7;
-  --dark-blue: #426679;
+  --slate-blue: #426679;
+  --dark-blue: #142841;
 
   --dark-blue-transparent: #426679c2;
 
   --orange: #CF8E55;
+  --pink: #D98373;
+  --lilac: #D6DCF9;
 }
+
+/* navbar as '426679c2' */
+/* background as 'linear-gradient(180deg, #1c2124 0%, #00090f 100%);' */
+/* background as 'linear-gradient(180deg, #071924 0%, #161e1c 100%);' */
+/* green as '94B536' */
+
+/* pink: D98373 */
+/* original orange: CF8E55 */
+/* lilac: D6DCF9 */
