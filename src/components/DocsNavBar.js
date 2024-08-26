@@ -11,6 +11,8 @@ function DocsNavBar({ currentPageName }) {
 
     const symbol = isSideOpen ? '<' : '>';
 
+    const width = isSideOpen ? 'max(50%, 190px)' : '100%';
+
     const toggleSide = () => {
         console.log('===== toggle')
         setSideOpen(!isSideOpen)
@@ -18,50 +20,141 @@ function DocsNavBar({ currentPageName }) {
 
 
     return (
-        <div className="docsNavBarContainer">
-            <p onClick={toggleSide} > {symbol} </p>
-            <div className='sidebarCollapsed'>
-                <DocsLinks />
-            </div>
+        <div>
+            <div className={`transparentBackground ${isSideOpen ? 'active' : ''}`} onClick={toggleSide}></div>
+            <div className={`docsNavBarContainer ${isSideOpen ? 'active' : ''}`}>
+                <p onClick={toggleSide}> 
+                    {symbol} 
+                </p>
+                <div className={`divider ${isSideOpen ? 'active' : ''}`}/>
+                <div className='sidebarCollapsed'>
+                    <DocsLinks />
+                </div>
 
 
-            <style jsx="true">{`
+                <style jsx="true">{`
                 /* when screen small */
                 @media (max-width: 767px){
                     .docsNavBarContainer{ 
+                        width: ${width};
+                        height: 50px;
+                        padding: 10px 0 0 20px;
+                        margin: 0;
+                        z-index: 5;
+
                         position: fixed;
-                        top: 50px; /* How far down the page you want your thing to live */
-
-                        display: flex;
-                        width: ${isSideOpen ? '80%' : '50px'};
-                        align-items: top;
-
-
-                        background-color: var(--middle-gray);
-                        color: var(--white);
-                    
-                        /* Give table of contents a scrollbar */
-                        height: calc(100vh - 50px);
-                        overflow: auto;
-
-                        
-                        padding: 40px 0px 0 20px;
-
                         display: flex;
                         flex-direction: column;
                         row-gap: 10px;
+
+                        top: 50px; /* How far down the page you want your thing to live */
+                        overflow-y: hidden;
+
+                        background-color: var(--middle-gray);
+                        color: var(--white);
                         
-                        z-index: 10;
+                        transition: all 0.3s linear;
+                        --webkit-transition: all 0.3s linear;
+                        -ms-transition: all 0.3s linear;
                     }
+
+                    .docsNavBarContainer.active{ 
+                        width: ${width};
+                        height: calc(100vh - 50px);
+
+                        margin: 0;
+                        padding: 10px 0 0 20px;
+
+                        {/* don't want scrollbar appearing accidentally during height transition */}
+                        animation-duration: 0.5s;
+                        animation-name: delay-overflow;
+                        animation-iteration-count: 1;
+                        animation-timing-function: linear;
+                        animation-fill-mode: forwards;
+                    }
+
+                    @keyframes delay-overflow {
+                        0% { overflow-y: hidden; }
+                        99% { overflow-y: hidden; }
+                        100% { overflow-y: auto; }
+                    }
+
+                    .docsNavBarContainer a{ 
+                        text-decoration: none;
+                        color: var(--white);
+                        padding: 10px;
+                        border-radius: 15px 0 0 15px;
+                        font-weight: 100;
+                    }
+
+                    .docsNavBarContainer a:hover{
+                        color: var(--middle-green);
+                        font-weight: 400;
+                    }
+
+                    .docsNavBarContainer p{
+                        padding-left: ${isSideOpen ? 'calc(80% - 10px)' : '10px'};
+                        padding-right: 10px;
+                        padding-top: ${isSideOpen ? '10px' : '3px'};
+                        padding-bottom: 10px;
+
+                        transition: all 0.3s linear;
+                        --webkit-transition: all 0.3s linear;
+                        -ms-transition: all 0.3s linear;
+                    }
+
                     .sidebarCollapsed{
                         display: ${isSideOpen ? 'flex' : 'none'};
                         flex-direction: column;
                         justify-content: space-between;
-                        height: 0.25rem;
-                        border-radius: 10px;
-                        background-color: white;
                         transform-origin: 0.2px;
+
                         transition: all 0.3s linear;
+                        --webkit-transition: all 0.3s linear;
+                        -ms-transition: all 0.3s linear;
+                    }
+
+                    .transparentBackground{
+                        position: fixed;
+                        display: flex;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 0px;
+                        background-color: transparent;
+                        z-index: 5;
+
+                        transition: all 0.3s linear;
+                        --webkit-transition: all 0.3s linear;
+                        -ms-transition: all 0.3s linear;
+                    }
+
+                    .transparentBackground.active{
+                        height: 100%;
+                        background-color: var(--dark-blue-transparent);
+                        display: block;
+
+                    }
+
+                    .divider {
+                        display: flex;
+                        width: 0%;
+                        height: 2px;
+                        background-color: var(--white);
+                        border-radius: 5px;
+
+                        transition: all 0s linear;
+                        --webkit-transition: all 0s linear;
+                        -ms-transition: all 0s linear;
+                    }
+
+                    .divider.active{
+                        display: block;
+                        width: 80%;
+
+                        transition: all 1s ease;
+                        --webkit-transition: all 1s ease;
+                        -ms-transition: all 1s ease;
                     }
                 }
 
@@ -72,6 +165,7 @@ function DocsNavBar({ currentPageName }) {
                 }
                                 
             `}</style>
+            </div>
         </div>
     );
 }

@@ -28,7 +28,7 @@
 }
 
 .sidebarContainer a:hover {
-    color: var(--green);
+    color: var(--middle-green);
     font-weight: 400;
 }
 

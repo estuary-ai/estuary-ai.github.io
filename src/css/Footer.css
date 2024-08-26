@@ -55,7 +55,7 @@
 
 .arxivLogo:hover {
     background-color: var(--dark-gray);
-    border: 1px solid var(--green);
+    border: 1px solid var(--middle-green);
 }
 
 .githubLogo {
@@ -114,7 +114,7 @@
 
 .emailLogo:hover {
     background-color: var(--dark-gray);
-    /* border: 1px solid var(--green); */
+    /* border: 1px solid var(--middle-green); */
 }
 
 .footerTitle {

@@ -28,7 +28,7 @@ nav {
 }
 
 .toc li.active > a {
-    color: var(--green) !important;
+    color: var(--middle-green) !important;
     font-weight: 300;
 }
 

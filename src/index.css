@@ -29,10 +29,20 @@ code {
 :root {
   --black: #13110C;
   --white: #E2E1DD;
+
   --light-gray: #969696;
   --middle-gray: #252627;
   --dark-gray: #1b1b1b;
-  --green: #61852B;
-  --blue: #547FE7;
+
+  --light-green: #ABBB7D;
+  --middle-green: #61852B;
+  --dark-green: #283B35;
+
+  --light-blue: #92CCEA;
+  --middle-blue: #547FE7;
+  --dark-blue: #426679;
+
+  --dark-blue-transparent: #426679c2;
+
   --orange: #CF8E55;
 }
