@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c75d3f19.css",
-    "main.js": "/static/js/main.a4836ff8.js",
+    "main.css": "/static/css/main.44ce5fd7.css",
+    "main.js": "/static/js/main.8a917a8d.js",
     "static/js/453.20734259.chunk.js": "/static/js/453.20734259.chunk.js",
     "static/media/Title_Background_2.mp4": "/static/media/Title_Background_2.686751ea16fe9d106fb1.mp4",
     "static/media/Title_Background.mp4": "/static/media/Title_Background.e8a0aed9436c40e9be65.mp4",
@@ -17,12 +17,12 @@
     "static/media/Background_img_3.jpg": "/static/media/Background_img_3.a66fe595487eeb148094.jpg",
     "static/media/discord_logo.png": "/static/media/discord_logo.f33f7d9fc07e1d074064.png",
     "index.html": "/index.html",
-    "main.c75d3f19.css.map": "/static/css/main.c75d3f19.css.map",
-    "main.a4836ff8.js.map": "/static/js/main.a4836ff8.js.map",
+    "main.44ce5fd7.css.map": "/static/css/main.44ce5fd7.css.map",
+    "main.8a917a8d.js.map": "/static/js/main.8a917a8d.js.map",
     "453.20734259.chunk.js.map": "/static/js/453.20734259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c75d3f19.css",
-    "static/js/main.a4836ff8.js"
+    "static/css/main.44ce5fd7.css",
+    "static/js/main.8a917a8d.js"
   ]
 }
