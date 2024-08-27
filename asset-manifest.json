@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7747b367.css",
-    "main.js": "/static/js/main.6a903cb2.js",
+    "main.css": "/static/css/main.edc3f2b4.css",
+    "main.js": "/static/js/main.c1accbdd.js",
     "static/js/453.20734259.chunk.js": "/static/js/453.20734259.chunk.js",
     "static/media/Title_Background_2.mp4": "/static/media/Title_Background_2.686751ea16fe9d106fb1.mp4",
     "static/media/Title_Background.mp4": "/static/media/Title_Background.e8a0aed9436c40e9be65.mp4",
@@ -14,15 +14,14 @@
     "static/media/github_logo.png": "/static/media/github_logo.fbb410d61e747052965b.png",
     "static/media/github_logo_white.png": "/static/media/github_logo_white.ab6987430fdb8a83acca.png",
     "static/media/arxiv_logo.png": "/static/media/arxiv_logo.5c3ff0606d1120d74fab.png",
-    "static/media/Background_img_3.jpg": "/static/media/Background_img_3.a66fe595487eeb148094.jpg",
     "static/media/discord_logo.png": "/static/media/discord_logo.f33f7d9fc07e1d074064.png",
     "index.html": "/index.html",
-    "main.7747b367.css.map": "/static/css/main.7747b367.css.map",
-    "main.6a903cb2.js.map": "/static/js/main.6a903cb2.js.map",
+    "main.edc3f2b4.css.map": "/static/css/main.edc3f2b4.css.map",
+    "main.c1accbdd.js.map": "/static/js/main.c1accbdd.js.map",
     "453.20734259.chunk.js.map": "/static/js/453.20734259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7747b367.css",
-    "static/js/main.6a903cb2.js"
+    "static/css/main.edc3f2b4.css",
+    "static/js/main.c1accbdd.js"
   ]
 }
