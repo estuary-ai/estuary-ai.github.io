@@ -29,6 +29,7 @@ code {
 :root {
   --black: #001420df;
   --white: #D6DCF9;
+  --white-transparent: #ffffff51;
 
   --light-gray: #969696;
   --middle-gray: #142841;

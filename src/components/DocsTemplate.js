@@ -39,6 +39,7 @@ function DocsTemplate({PageName, Content}) {
                 @media (max-width: 767px){
                     .mainContent{
                         width: 100%;
+                        margin-top: 50px;
                     }
                 }
             `}</style>

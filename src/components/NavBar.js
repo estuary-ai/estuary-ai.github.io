@@ -19,9 +19,6 @@ function NavBar() {
 
     return (
         <div>
-            <div>
-                <p>asdf</p>
-            </div>
             <div className="navigation">
                 <ul>
                     <li><Link to="/">Home</Link></li>

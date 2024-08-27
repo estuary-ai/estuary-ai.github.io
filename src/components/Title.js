@@ -9,7 +9,7 @@ const Title = (props) => {
 
     return ( 
         <div className="header">
-                <video src={bgv} class="bgv" width="600" height="300" autoPlay="true" muted="true" loop="true"/>
+                <video src={bgv} className="bgv" width="600" height="300" autoPlay={true} muted={true} loop={true}/>
                 <div className='title'>
                     <h1 className='mainTitle'>{mainTitle}</h1>
                     <h2 className='subtitle'>{subtitle}</h2>

@@ -1,4 +1,10 @@
-
+.homeWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .hiderBox {
     width: 100%;
@@ -78,4 +84,26 @@
     text-align: center;
     padding: 0 12vw;
     font-weight: 100;
+}
+
+.blurbWrapper {
+    /* wrapper for textblock, feature, architecture */
+    width: min(70%, 1250px);
+    height: 100%;
+
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1300px) {
+    /* when small, make it bigger */
+    .blurbWrapper {
+        width: 80%;
+    }
+    
 }

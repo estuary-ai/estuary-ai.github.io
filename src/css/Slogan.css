@@ -1,12 +1,12 @@
 .sloganWrapper{
-    color: white;
-    width: 50%;
-    height: 400px;
-    padding: 10px;   
+    color: var(--orange);
+    width: max(50%, 300px);
+    /* height: 400px; */
+    padding: 200px 10px 260px 10px;   
     margin: auto;
     margin-top: 20px;
         
-    font-size: 60px;
+    font-size: max(20px, 1.5vw);
     font-style: italic;
     font-weight: 500;
     text-align: center;
@@ -27,34 +27,35 @@
     transform: translateY(0); /* Move to original position */
 }
 
-
+/*
 @media (max-width: 1650px) {
-    .sloganWrapper{
-        font-size: 55px;
-    }
-}
-@media (max-width: 1450px) {
-    .sloganWrapper{
-        font-size: 50px;
-    }
-}
-@media (max-width: 1250px) {
-    .sloganWrapper{
-        font-size: 45px;
-    }
-}
-@media (max-width: 1050px) {
-    .sloganWrapper{
-        font-size: 40px;
-    }
-}
-@media (max-width: 850px) {
     .sloganWrapper{
         font-size: 35px;
     }
 }
-@media (max-width: 650px) {
+@media (max-width: 1450px) {
     .sloganWrapper{
         font-size: 30px;
     }
 }
+@media (max-width: 1250px) {
+    .sloganWrapper{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1050px) {
+    .sloganWrapper{
+        font-size: 20px;
+    }
+}
+@media (max-width: 850px) {
+    .sloganWrapper{
+        font-size: 15px;
+    }
+}
+@media (max-width: 650px) {
+    .sloganWrapper{
+        font-size: 15px;
+    }
+}
+*/

@@ -37,11 +37,11 @@ const Architecture = (props) => {
             ref={featureRef}
             className={`archWrapper`}>
                 
-                <img src={diagram} alt='diagram' className="archImg"/>
                 <div className={`archText ${isVisible ? 'fade-in' : ''}`}>
                     <div className="archTitle">{title}</div>
                     <div className="archStatement">{content}</div>
                 </div>
+                <img src={diagram} alt='diagram' className="archImg"/>
                 
         </div>
      );

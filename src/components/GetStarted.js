@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/GetStarted.css'; // Import the CSS file for styling
 
 
@@ -36,10 +37,9 @@ const GetStarted = () => {
             ref={featureRef}
             className={`getStartedWrapper ${isVisible ? 'fade-in' : ''}`}>
                 <div className="getStartedText">
-                    <div className="getStartedContent">Get started with Estuary <br/> Be part of the community today!</div>
+                    <div className="getStartedContent">Get started with Estuary now!</div>
                     <div className="getStartedButtons">
-                        <button className="getStartedButt">Get a demo</button>
-                        <button className="getStartedButt">Another button</button>
+                        <Link to="/docs/quickstart" className="getStartedButt">Quick start ↗ </Link>
                     </div>
                 </div>
                 

@@ -2,7 +2,6 @@
     width: 80%;
     color: white;
     max-width: 1200px;
-    margin-right: calc(width - 190px - 180px);
 }
 
 /* all h2 and h3 headers */

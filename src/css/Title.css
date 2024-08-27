@@ -5,6 +5,8 @@
     height: clamp(200px, 108vh, 1000px); 
     /* Minimum size 800px, preferred size 110vh, maximum size 1300px */
     /* margin: 80px 30px 0px; */
+    width: 100%;
+    background: linear-gradient(180deg, transparent, #141d1b);
 }
 
 
@@ -39,14 +41,15 @@
 }
 
 .title h1{
-    color: white;
+    color: var(--white);
     font-size: clamp(20px, 10vw, 200px);
 
 }
 .title h2 {
-    color : white;
+    color : var(--white);
+    font-size: max(20px, 2vw);
     /* font-size: 2.5vw; */
-    font-size: clamp(10px, 2.5vw, 100px);
+    /* font-size: clamp(10px, 2.5vw, 100px); */
     font-weight: 200;
     font-style: italic;
 }

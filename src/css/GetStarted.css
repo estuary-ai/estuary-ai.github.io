@@ -1,21 +1,23 @@
 /* ratio: 16:5 */
 
 .getStartedWrapper{
-    color: white;
+    color: var(--white);
     font-style: italic;
-    width: 1600px;
-    height: 600px;
-    padding: 10px;   
+    width: 100%;
+    padding: 150px 10px 150px 10px;   
     margin: auto;
     margin-top: 30px;
     text-align: center;
-    border-radius: 50px 50px 0px 0px;
+    /* border-radius: 50px 50px 0px 0px; */
     
     
-    background-image: url('../assets/Background_img_3.jpg'); /* Replace with your image path */
+    /* background-image: url('../assets/Background_img_3.jpg'); Replace with your image path */
+    background: var(--dark-gray);
     background-size: cover; /* Cover the entire div */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
+    
+    box-shadow: -1px -4px 20px 0px rgb(255 255 255 / 25%);
 
     display: flex;
     justify-content: center;
@@ -33,17 +35,17 @@
 }
 
 .getStartedContent{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 10%;
 }
 .getStartedButtWrapper{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .getStartedButt{
     /* button */
-    background-color: #d4d4d4;
+    background-color: var(--orange);
     /* background-color: #34251a; */
     color: #131313 ;
     border: none;
@@ -51,24 +53,34 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 300;
+
     margin: 0px 10px 0 10px;
     cursor: pointer;
     border-radius: 10px;
-    font-weight: bold;
+
+    transition: all 0.3s;
+    --webkit-transition: all 0.3s;
+    --ms-transition: all 0.3s;
 }
 
 .getStartedButt:hover {
-    background-color: #858585;
+    background-color: var(--middle-green);
+    color: var(--white);
+    font-weight: 400;
+    font-size: 16px;
 }
 
+
+/*
 
 @media (max-width: 1650px) {
     .getStartedWrapper {
       width: 1400px;
       height: 500px;
       font-size:15px;
-      /* background-color: red;  */
+      /* background-color: red;  /
 
     }
     .getStartedContent{
@@ -83,7 +95,7 @@
       width: 1200px;
       height: 400px;
       font-size:15px;
-      /* background-color: orange;  */
+      /* background-color: orange;  /
 
     }
     .getStartedContent{
@@ -98,7 +110,7 @@
       width: 1000px;
       height: 300px;
       font-size:15px;
-      /* background-color: black;  */
+      /* background-color: black;  /
 
     }
     .getStartedContent{
@@ -115,7 +127,7 @@
       width: 800px;
       height: 300px;
       font-size:15px;
-      /* background-color: green;  */
+      /* background-color: green;  /
 
     }
     .getStartedContent{
@@ -130,7 +142,7 @@
       width: 600px;
       height: 300px;
       font-size: 12px;
-      /* background-color: blue;  */
+      /* background-color: blue;  /
 
     }
     .getStartedContent{
@@ -145,8 +157,8 @@
         width: 400px;
         height: 300px;
         font-size: 10px; 
-        /* background-color: purple;  */
-        flex-direction: column; /* Stack children vertically */
+        /* background-color: purple;  /
+        flex-direction: column; /* Stack children vertically /
 
     }
     .getStartedContent{
@@ -162,3 +174,5 @@
 
 
 
+
+*/
