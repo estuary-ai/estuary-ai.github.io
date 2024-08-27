@@ -48,7 +48,7 @@ function DocsNavBar({ currentPageName }) {
                         top: 50px; /* How far down the page you want your thing to live */
                         overflow-y: hidden;
 
-                        background-color: var(--middle-gray);
+                        background-color: var(--dark-slate-blue);
                         color: var(--white);
                         
                         transition: all 0.3s linear;

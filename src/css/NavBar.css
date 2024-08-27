@@ -4,7 +4,7 @@
     height: 50px;
     flex-direction: row;
     /* background-color:lightslategray; */
-    background-color: var(--black);
+    background-color: var(--dark-blue);
 
     margin-bottom: 10px;
 
