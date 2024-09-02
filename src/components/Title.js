@@ -23,6 +23,10 @@ const Title = (props) => {
                             <a className="linkbtnFooter githubLogo" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
                                 {/* GitHub */}
                             </a>
+
+                            <a className="linkbtnFooter youtubeLogo" href="https://youtu.be/m5wO7E0zet8" target="_blank" rel="noreferrer">
+                                {/* YouTube */}
+                            </a>
                         </div>
                     }
                     

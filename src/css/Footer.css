@@ -117,6 +117,29 @@
     /* border: 1px solid var(--middle-green); */
 }
 
+.youtubeLogo {
+    width: 40px;
+    height: 30px;
+    background: url(../assets/youtube_logo.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    /* border: 0.2px solid var(--white); */
+    /* border-radius: 5px; */
+
+    cursor: pointer;
+
+    margin-bottom: 14px;
+}
+
+.youtubeLogo:hover {
+    width: 40px;
+    height: 30px;
+    background: url(../assets/youtube_logo_white.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .footerTitle {
     padding-bottom: 10px;
     border-bottom: 1px solid #fff;
