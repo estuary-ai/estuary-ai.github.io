@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83e43c41.css",
-    "main.js": "/static/js/main.c1accbdd.js",
+    "main.css": "/static/css/main.ec578155.css",
+    "main.js": "/static/js/main.92c64785.js",
     "static/js/453.20734259.chunk.js": "/static/js/453.20734259.chunk.js",
     "static/media/Title_Background_2.mp4": "/static/media/Title_Background_2.686751ea16fe9d106fb1.mp4",
     "static/media/Title_Background.mp4": "/static/media/Title_Background.e8a0aed9436c40e9be65.mp4",
@@ -13,15 +13,17 @@
     "static/media/discord_logo_white.png": "/static/media/discord_logo_white.dd183b0ec398c49f50d3.png",
     "static/media/github_logo.png": "/static/media/github_logo.fbb410d61e747052965b.png",
     "static/media/github_logo_white.png": "/static/media/github_logo_white.ab6987430fdb8a83acca.png",
+    "static/media/youtube_logo_white.png": "/static/media/youtube_logo_white.3d901a704d02ca7258bb.png",
     "static/media/arxiv_logo.png": "/static/media/arxiv_logo.5c3ff0606d1120d74fab.png",
+    "static/media/youtube_logo.png": "/static/media/youtube_logo.0f12c4c32e4818c88b1d.png",
     "static/media/discord_logo.png": "/static/media/discord_logo.f33f7d9fc07e1d074064.png",
     "index.html": "/index.html",
-    "main.83e43c41.css.map": "/static/css/main.83e43c41.css.map",
-    "main.c1accbdd.js.map": "/static/js/main.c1accbdd.js.map",
+    "main.ec578155.css.map": "/static/css/main.ec578155.css.map",
+    "main.92c64785.js.map": "/static/js/main.92c64785.js.map",
     "453.20734259.chunk.js.map": "/static/js/453.20734259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e43c41.css",
-    "static/js/main.c1accbdd.js"
+    "static/css/main.ec578155.css",
+    "static/js/main.92c64785.js"
   ]
 }
