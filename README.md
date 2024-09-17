@@ -1,6 +1,6 @@
 # Estuary: A Framework for Building Multimodal Low-Latency Real-Time Socially Interactive Agents
 ## Homepage and Documentation
-https://al-estuary.github.io/
+https://estuary-ai.github.io/
 
 Work in progress~
 

@@ -12,7 +12,9 @@ import DocsLandingPage from "./pages/DocsLandingPage";
 import DemosPage from "./pages/DemosPage";
 import NoPage from "./pages/NoPage";
 
-import QuickStart from "./pages/Docs/QuickStart";
+import AVPDemo from "./pages/Docs/AVPDemo";
+import Server from "./pages/Docs/Server";
+import UnitySDK from "./pages/Docs/UnitySDK";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -33,7 +35,9 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="docs" element={<DocsLandingPage />} />
-          <Route path="docs/quickstart" element={<QuickStart />} />
+          <Route path="docs/avpdemo" element={<AVPDemo />} />
+          <Route path="docs/server" element={<Server />} />
+          <Route path="docs/unitysdk" element={<UnitySDK />} />
           <Route path="demos" element={<DemosPage />} />
           <Route path="*" element={<NoPage />} />
         </Route>

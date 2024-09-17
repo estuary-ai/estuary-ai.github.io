@@ -17,10 +17,10 @@ const Title = (props) => {
                     {
                         showButtons &&
                         <div className="buttonWrapper">
-                            <a className="linkbtnFooter arxivLogo" href="https://arxiv.org/abs/2109.07372" target="_blank" rel="noreferrer">
+                            <a className="linkbtnFooter arxivLogo" target="_blank" rel="noreferrer">
                                 {/* Paper */}
                             </a>
-                            <a className="linkbtnFooter githubLogo" href="https://github.com/Al-Estuary" target="_blank" rel="noreferrer">
+                            <a className="linkbtnFooter githubLogo" href="https://github.com/estuary-ai" target="_blank" rel="noreferrer">
                                 {/* GitHub */}
                             </a>
 
