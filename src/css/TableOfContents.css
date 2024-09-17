@@ -9,10 +9,10 @@ nav {
 }
 
 .toc {
-    width: 180px;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: var(--light-gray);
@@ -21,6 +21,7 @@ nav {
     border-width: 0px 0px 0px 0.2px;
     font-weight: 130;
 }
+
 
 .toc a {
     text-decoration: none;

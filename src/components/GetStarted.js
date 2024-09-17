@@ -39,7 +39,7 @@ const GetStarted = () => {
                 <div className="getStartedText">
                     <div className="getStartedContent">Get started with Estuary now!</div>
                     <div className="getStartedButtons">
-                        <Link to="/docs/quickstart" className="getStartedButt">Quick start ↗ </Link>
+                        <Link to="/docs" className="getStartedButt">Quick start ↗ </Link>
                     </div>
                 </div>
                 

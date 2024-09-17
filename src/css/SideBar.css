@@ -4,13 +4,14 @@
     top: 50px; /* How far down the page you want your thing to live */
   
     /* Give table of contents a scrollbar */
-    max-height: calc(100vh - 50px);
+    /* max-height: calc(100vh - 50px); */
     overflow: auto;
 
     min-width: 190px;
     background-color: var(--dark-slate-blue);
     
     padding: 40px 0px 0 20px;
+    margin-top: 50px;
 
     display: flex;
     flex-direction: column;

@@ -14,7 +14,13 @@ function DocsLandingPage() {
             <div>
                 <h1 id="h-introduction">Introduction</h1>
                 <p> Estuary is a framework for building multimodal real-time Socially Intelligent Agents (SIAs). </p>
-                <p> We're still actively working on developing our framework as well as demonstration projects, so please be on the lookout! Check this page for updates, join our <a className="linkbtnFooter" href="https://discord.gg/2Nazr9w25n" target="_blank" rel="noreferrer">Discord</a>, or sign up for our <a className='linkbtnFooter' href="https://docs.google.com/forms/d/e/1FAIpQLSfVsILYf80FSj1jUO7HxvoA2MmJ2GdH7QB7VF_7JRpRr8YUjg/viewform" target="_blank" rel="noreferrer">mailing list</a>! We promise not to spam your inboxes, and we would love to see what you create using Estuary!</p>
+                <p> We're still actively working on developing our framework as well as demonstration projects, so please be on the lookout! Check this page for updates, join our <a className="docsbtn" href="https://discord.gg/2Nazr9w25n" target="_blank" rel="noreferrer">Discord</a>, or sign up for our <a className='docsbtn' href="https://docs.google.com/forms/d/e/1FAIpQLSfVsILYf80FSj1jUO7HxvoA2MmJ2GdH7QB7VF_7JRpRr8YUjg/viewform" target="_blank" rel="noreferrer">mailing list</a>! 
+                
+                    <br/>
+                    <br/>
+                    We promise not to spam your inboxes, and we would love to see what you create using Estuary!</p>
+
+                <div className="divider"></div>
 
                 <h2 id="h-something">Client-Server Architecture</h2>
                 <p> Estuary is made up of two components: a client and a server. </p>
