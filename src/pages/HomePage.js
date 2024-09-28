@@ -29,7 +29,7 @@ function HomePage() {
 
         <div className="homeWrapper">
             {/* top title and links */}
-            <Title mainTitle={"Estuary"} subtitle={"A Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents"} bgv={backgroundVideo2} showButtons={true} />
+            <Title mainTitle={"Estuary"} subtitle={"An Open-Source Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents"} bgv={backgroundVideo2} showButtons={true} />
             <Slogan slogan={"Streamline your AI agent pipeline with Estuary, powering seamless real-time interactions with agents on desktop and XR."} />
 
             <div className="blurbWrapper">
