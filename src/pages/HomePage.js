@@ -46,9 +46,9 @@ function HomePage() {
                     // content={"Some features that Estuary supports"}
                     slides={[
                         { id: 1, image: skelly, desc: "“Character in AR in Apple Vision Pro" },
-                        { id: 2, image: teaserchair, desc: "Interaction with character, and path finding" },
-                        { id: 3, image: teasermesh, desc: "Virtual character observing the environment surrounding" },
-                        { id: 4, image: teasermeta, desc: "More realistic virtual character" },
+                        { id: 2, image: teaserchair, desc: "Semantic Understanding & Pathfinding" },
+                        { id: 3, image: teasermesh, desc: "Estuary leveraging mesh classification capabilities into multimodal interaction" },
+                        { id: 4, image: teasermeta, desc: "Meta Quest 3 VR Environment" },
                     ]}
                 />
                 <Architecture title={"ARCHITECTURE"}
