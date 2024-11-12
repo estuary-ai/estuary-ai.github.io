@@ -10,7 +10,7 @@ function Footer() {
                     {/* left column */}
                     <div>
                         <p className="footerTitle">Resources</p>
-                        <a className="linkbtnFooter arxivLogo" target="_blank" rel="noreferrer" />
+                        <a className="linkbtnFooter arxivLogo"  href="https://arxiv.org/abs/2410.20116" target="_blank" rel="noreferrer" />
                         <a className="linkbtnFooter githubLogo" href="https://github.com/estuary-ai" target="_blank" rel="noreferrer" />
                         <a className="linkbtnFooter youtubeLogo" href="https://youtu.be/m5wO7E0zet8" target="_blank" rel="noreferrer" />
 

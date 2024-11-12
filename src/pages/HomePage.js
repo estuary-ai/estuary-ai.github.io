@@ -45,10 +45,10 @@ function HomePage() {
                 <Feature title={"FEATURES"}
                     // content={"Some features that Estuary supports"}
                     slides={[
-                        { id: 1, image: skelly, desc: "desc1 asdfasdfasdf" },
-                        { id: 2, image: teaserchair, desc: "desc2 qwerqwerqwer" },
-                        { id: 3, image: teasermesh, desc: "desc3 zxcvzxcvzxcv" },
-                        { id: 4, image: teasermeta, desc: "desc4 poiupoijpoiu" },
+                        { id: 1, image: skelly, desc: "“Character in AR in Apple Vision Pro" },
+                        { id: 2, image: teaserchair, desc: "Interaction with character, and path finding" },
+                        { id: 3, image: teasermesh, desc: "Virtual character observing the environment surrounding" },
+                        { id: 4, image: teasermeta, desc: "More realistic virtual character" },
                     ]}
                 />
                 <Architecture title={"ARCHITECTURE"}
