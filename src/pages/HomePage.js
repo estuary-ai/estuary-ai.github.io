@@ -30,16 +30,23 @@ function HomePage() {
         <div className="homeWrapper">
             {/* top title and links */}
             <Title mainTitle={"Estuary"} subtitle={"An Open-Source Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents"} bgv={backgroundVideo2} showButtons={true} />
-            <Slogan slogan={"Streamline your AI agent pipeline with Estuary, powering seamless real-time interactions with agents on desktop and XR."} />
+            <Slogan slogan={"Build your LLM-powered AI agent pipeline with Estuary, a flexible and robust cross-platform framework."} />
 
             <div className="blurbWrapper">
-                <TextBlock title={"WHAT IS ESTUARY?"} content={"Estuary is a framework for creating socially interactive agents (SIAs) that you can interact with in real-time. Its standardized pipeline is designed to be multimodal with low-latency, and new modules can be added for extra capabilities."} />
-                {/* <TextBlock title={"OUR MISSION"} content={"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."}/> */}
+                <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} />
+                {}
 
+                <TextBlock title={"LOW-LATENCY"} content={"By integrating all microservices into a single streamlined endpoint, Estuary is able to achieve faster response times compared to using multiple cloud endpoints."} />
+                {}
 
+                <TextBlock title={"MULTIMODAL"} content={"Estuary is designed from the ground up to support the processing of multiple streams of data from different modalities such as audio and text and soon video."} />
+                {}
 
-                <TextBlock title={"USE CASES"} content={"Estuary is ideal for anyone seeking an open-source solution with fine-tuned control over AI modules and data processing. Primarily designed with SIA research in mind, Estuary is equipped to run on desktop and head-mounted displays (HMDs) with an external server to run heavy-weight computations. Out of the box, Estuary provides basic modules, and the pipeline is easily extensible for new modules."} />
-                {/* <TextBlock title={"BUILD"} content={"Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. ."}/> */}
+                <TextBlock title={"PLATFORM AGNOSTIC"} content={"Designed as a flexible server-client architecture, Estuary offers the maximum compatibility for AI models and target hardware platforms including XR headsets."} />
+                {}
+
+                <TextBlock title={"OPEN SOURCE"} content={"The sky's the limit for what you can do with Estuary being a completely free and open source framework."} />
+                {}
 
                 <br />
                 <Feature title={"FEATURES"}
@@ -52,7 +59,7 @@ function HomePage() {
                     ]}
                 />
                 <Architecture title={"ARCHITECTURE"}
-                    content={"Estuary runs on a client-server architecture. The client and server communicate through SocketIO protocol on a shared network. The client provides the display and interaction methods for the user (e.g., desktop, HMD). The interactions are sent to the server running on a computing device (e.g., a desktop with a GPU) which performs the heavy-weight computations for the client (e.g., running a local Large Language Model (LLM)). More information can be found in our paper and video."}
+                    content={"Estuary runs on a client-server architecture with communications being done through the SocketIO protocol on a shared network. An example setup may be an XR headset streaming multimodal data to a computing device (e.g., a desktop with a GPU) which performs the heavy-weight computations for the client (e.g., running a local LLM). More information can be found in our paper and video."}
                     img={diagram}
                 />
             </div>
