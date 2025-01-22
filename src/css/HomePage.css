@@ -60,6 +60,23 @@
     align-items: center;
     padding: 20px;
 }
+.mainTextBlockWrapper{
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows wrapping to the next line when space runs out */
+    gap: 30px; /* Optional: Adds spacing between the divs */
+    justify-content: center; /* Centers items horizontally */
+
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start 20px down */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+
+
+}
+
+.mainTextBlockWrapper.fade-in {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
 
 .blurbContent {
     color: white;

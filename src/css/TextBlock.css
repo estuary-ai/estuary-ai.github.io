@@ -2,23 +2,22 @@
 
 .textBlockWrapper{
     color: var(--white);
-    width: 100%;
-    /* height: 400px; */
-    padding: 100px 20px 100px 20px;
-    margin: auto;
+    /* width: 100%; */
+    min-width: 300px; 
+    max-width: 25%; 
+    /* width: 300px; */
+    padding: 20px;
+    /* margin: auto; */
     margin-bottom: 50px;
-    /* border-top: 3px solid var(--white);
-    border-bottom: 3px solid var(--white); */
 
-
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     /* gap: 2vw; */
 
-    opacity: 0; /* Start hidden */
-    transform: translateX(-20px); /* Start 20px left */
-    transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+    /* opacity: 0; 
+    transform: translateY(-20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;  */
 
     transition: box-shadow 0.25s ease;
     box-shadow: none;
@@ -33,39 +32,39 @@
 }
 
 .textBlockWrapper.fade-in {
-    opacity: 1; /* Fade in */
-    transform: translateX(0); /* Move to original position */
+    /* opacity: 1; 
+    transform: translateY(0);  */
 }
 
 .textBlockTitle{
     color: var(--pink);
     font-size: 30px;
     font-weight: bold;
-    float: left;
-    width: 25%;
+    /* float: left; */
+    /* width: 25%; */
 }
 .textBlockContent{
     font-size: 20px;
-    float: right;
-    width: 75%;
+    /* float: right; */
+    /* width: 75%; */
     font-weight: 200;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 
 }
 @media (max-width: 1300px) {
     .textBlockWrapper {
-      flex-direction: column;
-      align-items: flex-start;
+      /* flex-direction: column;
+      align-items: flex-start; */
       /* // background-color: orange;  // */
 
     }
     .textBlockTitle{
-        width: 90%;
+        /* width: 90%; */
         padding-bottom: 30px;
         /* font-size: 30px; */
     }
     .textBlockContent{
-        width: 90%;
+        /* width: 90%; */
         /* font-size: 15px; */
     }
 }

@@ -21,9 +21,40 @@ import TextBlock from '../components/TextBlock';
 import Architecture from '../components/Architecture';
 import GetStarted from '../components/GetStarted';
 
+import React, { useEffect, useRef, useState } from 'react';
+
 
 function HomePage() {
     // console.log('Current width:', window.innerWidth);
+
+    const [isVisible, setIsVisible] = useState(false);
+    const featureRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                setIsVisible(true);
+                observer.unobserve(entry.target);
+                }
+            });
+            },
+            { threshold: 0.1 }
+        );
+    
+        if (featureRef.current) {
+            observer.observe(featureRef.current);
+        }
+    
+        return () => {
+            if (featureRef.current) {
+            observer.unobserve(featureRef.current);
+            }
+        };
+        }, []);
+
+
 
     return (
 
@@ -33,20 +64,26 @@ function HomePage() {
             <Slogan slogan={"Build your LLM-powered AI agent pipeline with Estuary, a flexible and robust cross-platform framework."} />
 
             <div className="blurbWrapper">
-                <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} />
-                {}
+                <div 
+                    ref={featureRef}
+                    className={`mainTextBlockWrapper ${isVisible ? 'fade-in' : ''}`}
+                >
+                    <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} />
+                    {}
 
-                <TextBlock title={"LOW-LATENCY"} content={"By integrating all microservices into a single streamlined endpoint, Estuary is able to achieve faster response times compared to using multiple cloud endpoints."} />
-                {}
+                    <TextBlock title={"LOW-LATENCY"} content={"By integrating all microservices into a single streamlined endpoint, Estuary is able to achieve faster response times compared to using multiple cloud endpoints."} />
+                    {}
 
-                <TextBlock title={"MULTIMODAL"} content={"Estuary is designed from the ground up to support the processing of multiple streams of data from different modalities such as audio and text and soon video."} />
-                {}
+                    <TextBlock title={"MULTIMODAL"} content={"Estuary is designed from the ground up to support the processing of multiple streams of data from different modalities such as audio and text and soon video."} />
+                    {}
 
-                <TextBlock title={"PLATFORM AGNOSTIC"} content={"Designed as a flexible server-client architecture, Estuary offers the maximum compatibility for AI models and target hardware platforms including XR headsets."} />
-                {}
+                    <TextBlock title={"PLATFORM AGNOSTIC"} content={"Designed as a flexible server-client architecture, Estuary offers the maximum compatibility for AI models and target hardware platforms including XR headsets."} />
+                    {}
 
-                <TextBlock title={"OPEN SOURCE"} content={"The sky's the limit for what you can do with Estuary being a completely free and open source framework."} />
-                {}
+                    <TextBlock title={"OPEN SOURCE"} content={"The sky's the limit for what you can do with Estuary being a completely free and open source framework."} />
+                    {}
+                </div>
+                
 
                 <br />
                 <Feature title={"FEATURES"}
