@@ -7,9 +7,9 @@
     padding: 160px 10px 160px 10px;   
     /* background-color: red;  */
     margin: auto;
-    margin-bottom: 100px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+    margin-bottom: 50px;
+    /* border-top: 3px solid white;
+    border-bottom: 3px solid white; */
     display: flex;
     align-items: flex-start;
 

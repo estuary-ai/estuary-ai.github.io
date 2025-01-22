@@ -4,11 +4,11 @@
     color: var(--white);
     width: 100%;
     /* height: 400px; */
-    padding: 160px 10px 160px 10px;
+    padding: 100px 10px 100px 10px;
     margin: auto;
-    margin-bottom: 200px;
-    border-top: 3px solid var(--white);
-    border-bottom: 3px solid var(--white);
+    margin-bottom: 50px;
+    /* border-top: 3px solid var(--white);
+    border-bottom: 3px solid var(--white); */
 
 
     display: flex;
