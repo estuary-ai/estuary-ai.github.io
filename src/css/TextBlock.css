@@ -4,7 +4,7 @@
     color: var(--white);
     width: 100%;
     /* height: 400px; */
-    padding: 100px 10px 100px 10px;
+    padding: 100px 20px 100px 20px;
     margin: auto;
     margin-bottom: 50px;
     /* border-top: 3px solid var(--white);
@@ -19,6 +19,17 @@
     opacity: 0; /* Start hidden */
     transform: translateX(-20px); /* Start 20px left */
     transition: opacity 1s ease-out, transform 1s ease-out; /* Transition properties */
+
+    transition: box-shadow 0.25s ease;
+    box-shadow: none;
+
+    transition: background-color 0.25s ease;
+    background-color: #0b1a22; /*TODO: FIND ACTUAL BACKGROUND COLOR*/
+}
+
+.textBlockWrapper:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #0f222c;
 }
 
 .textBlockWrapper.fade-in {
