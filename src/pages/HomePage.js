@@ -22,6 +22,7 @@ import Architecture from '../components/Architecture';
 import GetStarted from '../components/GetStarted';
 
 import React, { useEffect, useRef, useState } from 'react';
+import { FolderLock, Clock, FileStack, LaptopMinimalCheck, BookOpen } from 'lucide-react';
 
 
 function HomePage() {
@@ -68,19 +69,19 @@ function HomePage() {
                     ref={featureRef}
                     className={`mainTextBlockWrapper ${isVisible ? 'fade-in' : ''}`}
                 >
-                    <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} />
+                    <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} icon={<FolderLock size={24}/>} />
                     {}
 
-                    <TextBlock title={"LOW-LATENCY"} content={"By integrating all microservices into a single streamlined endpoint, Estuary is able to achieve faster response times compared to using multiple cloud endpoints."} />
+                    <TextBlock title={"LOW-LATENCY"} content={"By integrating all microservices into a single streamlined endpoint, Estuary is able to achieve faster response times compared to using multiple cloud endpoints."} icon={<Clock size={24}/>} />
                     {}
 
-                    <TextBlock title={"MULTIMODAL"} content={"Estuary is designed from the ground up to support the processing of multiple streams of data from different modalities such as audio and text and soon video."} />
+                    <TextBlock title={"MULTIMODAL"} content={"Estuary is designed from the ground up to support the processing of multiple streams of data from different modalities such as audio and text and soon video."} icon={<FileStack size={24}/>} />
                     {}
 
-                    <TextBlock title={"PLATFORM AGNOSTIC"} content={"Designed as a flexible server-client architecture, Estuary offers the maximum compatibility for AI models and target hardware platforms including XR headsets."} />
+                    <TextBlock title={"PLATFORM AGNOSTIC"} content={"Designed as a flexible server-client architecture, Estuary offers the maximum compatibility for AI models and target hardware platforms including XR headsets."} icon={<LaptopMinimalCheck size={24}/>} />
                     {}
 
-                    <TextBlock title={"OPEN SOURCE"} content={"The sky's the limit for what you can do with Estuary being a completely free and open source framework."} />
+                    <TextBlock title={"OPEN SOURCE"} content={"The sky's the limit for what you can do with Estuary being a completely free and open source framework."} icon={<BookOpen size={24}/>} />
                     {}
                 </div>
                 

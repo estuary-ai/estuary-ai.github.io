@@ -36,6 +36,12 @@
     transform: translateY(0);  */
 }
 
+.textBlockHeader{
+    display: flex;
+    align-items: left; /* Aligns items vertically */
+    gap: 8px; /* Adds space between the title and icon */
+}
+
 .textBlockTitle{
     color: var(--pink);
     font-size: 30px;
@@ -43,6 +49,13 @@
     /* float: left; */
     /* width: 25%; */
 }
+
+.textBlockIcon {
+    display: flex; /* Ensures proper alignment */
+    align-items: center; /* Centers the icon */
+    justify-content: center; /* Centers the icon */
+}
+
 .textBlockContent{
     font-size: 20px;
     /* float: right; */
@@ -60,7 +73,7 @@
     }
     .textBlockTitle{
         /* width: 90%; */
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
         /* font-size: 30px; */
     }
     .textBlockContent{

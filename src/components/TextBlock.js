@@ -4,6 +4,8 @@ import '../css/TextBlock.css'; // Import the CSS file for styling
 const TextBlock = (props) => {
     let title = props.title; 
     let content = props.content
+    let icon = props.icon
+
     const [isVisible, setIsVisible] = useState(false);
     const featureRef = useRef(null);
 
@@ -35,7 +37,10 @@ const TextBlock = (props) => {
         <div 
             ref={featureRef}
             className={`textBlockWrapper ${isVisible ? 'fade-in' : ''}`}>
-                <div className="textBlockTitle">{title}</div>
+                <div className="textBlockHeader">
+                    <div className="textBlockIcon">{icon}</div>
+                    <div className="textBlockTitle">{title}</div>
+                </div>
                 <div className="textBlockContent">{content}</div>
         </div>
      );
