@@ -19,10 +19,11 @@ Work in progress~
 1. Clone repo!
 2. `cd` into root directory that contains `package.json`. Make sure you're in the `main` branch
 3. `npm install` to install all dependencies
-4. Make changes as you wish!
-5. To preview your local changes on localhost:3000, run `npm start`
-6. To push and deploy on GitHub Pages, run `npm run deploy`
-7. Make sure to push your local changes to `main` branch as well!
+4. `npm install lucide-react` to install icons
+5. Make changes as you wish!
+6. To preview your local changes on localhost:3000, run `npm start`
+7. To push and deploy on GitHub Pages, run `npm run deploy`
+8. Make sure to push your local changes to `main` branch as well!
 
 <!-- # Getting Started with Create React App
 
