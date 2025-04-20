@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .mainContent {
     width: 80%;
     color: white;
@@ -11,15 +15,17 @@
 }
 
 .mainContent h4 {
-    color: var(--slate-blue);
-    font-size: 1.2em;
+    color: var(--middle-green);
+    font-size: 1.1em;
     margin-left: 25px;
+    margin-top: 10px;
 }
 
 .mainContent h3 {
     color: var(--light-green);
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 20px;
+    margin-top: 15px;
 }
 
 .mainContent h2{
@@ -27,13 +33,16 @@
 
     color: var(--pink);
     
-    font-size: 1.8em;
+    font-size: 1.5em;
+    margin-top: 20px;
 
     /* margin-top: 60px; */
 }
 
 .mainContent h1 {
     color: var(--orange);
+    font-size: 2em;
+    margin-top: 30pt;
 }
 
 @keyframes highlight {
@@ -101,4 +110,29 @@
     border-top: 0.8px solid var(--lilac);
     margin-top: 40px;
     margin-bottom: 40px;
+}
+
+.mainContent ul {
+    margin-bottom: 20px;
+    @apply list-disc list-inside
+}
+
+.mainContent ol {
+    margin-bottom: 20px;
+    @apply list-decimal list-inside space-y-1 marker:text-gray-500
+}
+
+.mainContent strong {
+    color: var(--light-green)
+}
+
+.mainContent code {
+    color: var(--pink);
+    max-width: calc(100vh - 600px);
+    /* @apply whitespace-pre overflow-auto flex w-full sm:whitespace-normal sm:overflow-visible; */
+}
+
+.mainContent pre {
+    font-size: small;
+    @apply whitespace-pre overflow-auto flex w-full;
 }

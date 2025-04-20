@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;/* ratio: 16:5 */
 
 .archWrapper{
     color: var(--white);

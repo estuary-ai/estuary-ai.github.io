@@ -12,6 +12,24 @@ import DocsNavBar from './DocsNavBar';
 @param Title = the title of the page
 @param Content = must use `h2` and `h3` tags for table of contents generation
 */
+
+// ********* NOTE WHEN TURNING MARKDOWN TO HTML ***********
+// 1. https://www.w3docs.com/nx/marked --> is helpful
+// 2. escaping characters and special accents is difficult..
+    // just ask ChatGPT :P
+// 3. for the code blocks, make sure to wrap it in {`code`}
+    // gives multiline
+    // can also indent as you'd like
+    // e.g.,
+        // <pre><code class="language-bash">{`
+        //     [wsl2]
+        //         networkingMode=mirrored
+        //         [experimental]
+        //         dnsTunneling=true
+        //         autoProxy=true
+        //         hostAddressLoopback=true
+        // `}</code></pre>
+// 4. sometimes it fucks up the <ol> </ol> tags. Just make sure they're closed
 function DocsTemplate({PageName, Content}) {
 
     return (

@@ -55,7 +55,7 @@
 
 .navigation a:hover{
     color: var(--middle-green) !important;
-    font-size: 1.2em;
-    font-weight: 400;
+    /* font-size: 1.2em; */
+    /* font-weight: 400; */
 }
 
