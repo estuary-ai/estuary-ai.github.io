@@ -65,6 +65,8 @@
     flex-wrap: wrap; /* Allows wrapping to the next line when space runs out */
     gap: 30px; /* Optional: Adds spacing between the divs */
     justify-content: center; /* Centers items horizontally */
+    justify-items: center;
+    width: 100%;
 
     opacity: 0; /* Start hidden */
     transform: translateY(20px); /* Start 20px down */

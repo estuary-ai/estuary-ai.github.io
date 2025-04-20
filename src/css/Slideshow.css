@@ -2,7 +2,7 @@
 .mySlides {display: none}
 .slideImg {
     vertical-align: middle;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 /* Slideshow container */
@@ -11,8 +11,8 @@
   width: 100%;
   position: relative;
   margin: auto;
-  border-radius: 20px;
-  box-shadow: 10px 10px 5px #515151;
+  /* border-radius: 20px; */
+  box-shadow: -10px -10px 0px white ;
   box-sizing: border-box;
 
 }

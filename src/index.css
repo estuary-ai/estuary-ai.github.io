@@ -32,12 +32,45 @@ code {
 
 :root {
   --black: #000000df;
+  --black-black: #000000;
   --white: #E2E1DD;
   --white-transparent: #ffffff51;
 
   --light-gray: #969696;
   --middle-gray: #252627;
   --dark-gray: #0a0a0a;
+  --almost-black: #070707;
+
+  --moss-gradient: linear-gradient(180deg, #000000 0%, #070707 100%);
+
+  --light-green: #83d0cb;
+  --middle-green: #A8DADC; 
+  --dark-green: #283B35;
+
+  --light-blue: #F1FAEE;
+  --middle-blue: #A8DADC;
+  --slate-blue: #1D3557;
+  --dark-slate-blue: #1d355778;
+  --dark-blue: #071933a9;
+
+  --dark-blue-solid: #000211;
+
+  --dark-blue-transparent: #1d35578d;
+
+  --orange: #efa89a;
+  --pink: #d5896f;
+  --lilac: #F1FAEE;
+}
+/* :root {
+  --black: #000000df;
+  --black-black: #000000;
+  --white: #E2E1DD;
+  --white-transparent: #ffffff51;
+
+  --light-gray: #969696;
+  --middle-gray: #252627;
+  --dark-gray: #0a0a0a;
+  --almost-black: #070707;
 
   --moss-gradient: linear-gradient(180deg, #000000 0%, #070707 100%);
 
@@ -51,9 +84,11 @@ code {
   --dark-slate-blue: #142841;
   --dark-blue: #001420df;
 
+  --dark-blue-solid: #010b11;
+
   --dark-blue-transparent: #426679c2;
 
   --orange: #CF8E55;
   --pink: #D98373;
   --lilac: #D6DCF9;
-}
+} */

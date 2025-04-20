@@ -1,5 +1,5 @@
 import '../css/HomePage.css';
-import diagram from "../assets/Diagram.png";
+
 // import architecture from "../assets/Estuary High Level Composite Structure.png";
 import skelly from "../assets/SkellyChair.png";
 import teaserchair from "../assets/Teaser_chair.png";
@@ -65,9 +65,9 @@ function HomePage() {
             <Slogan slogan={"Build your LLM-powered AI agent pipeline with Estuary, a flexible and robust cross-platform framework."} />
 
             <div className="blurbWrapper">
-                <div 
-                    ref={featureRef}
-                    className={`mainTextBlockWrapper ${isVisible ? 'fade-in' : ''}`}
+            <div 
+                ref={featureRef}
+                className={`mainTextBlockWrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 ${isVisible ? 'fade-in' : ''}`}
                 >
                     <TextBlock title={"PRIVATE"} content={"Configurable to operate completely off-cloud so your data remains local, private, and secure."} icon={<FolderLock size={24}/>} />
                     {}
@@ -98,7 +98,6 @@ function HomePage() {
                 />
                 <Architecture title={"ARCHITECTURE"}
                     content={"Estuary runs on a client-server architecture with communications being done through the SocketIO protocol on a shared network. An example setup may be an XR headset streaming multimodal data to a computing device (e.g., a desktop with a GPU) which performs the heavy-weight computations for the client (e.g., running a local LLM). More information can be found in our paper and video."}
-                    img={diagram}
                 />
             </div>
             <GetStarted />

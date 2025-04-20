@@ -1,4 +1,6 @@
-/* ratio: 16:5 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;/* ratio: 16:5 */
 
 .archWrapper{
     color: var(--white);
@@ -37,8 +39,7 @@
     float: right;
     width: max(60%, 300px);
     margin-right: 40px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px #888888;
+    /* box-shadow: -10px -10px 0px white; */
     align-self: center;
 }
 .archTitle{

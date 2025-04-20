@@ -1,10 +1,15 @@
 /* ratio: 16:5 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .textBlockWrapper{
     color: var(--white);
     /* width: 100%; */
     min-width: 300px; 
-    max-width: 25%; 
+    max-width: 35%; 
+
+    height:100%;
     /* width: 300px; */
     padding: 20px;
     /* margin: auto; */
@@ -19,16 +24,21 @@
     transform: translateY(-20px); 
     transition: opacity 1s ease-out, transform 1s ease-out;  */
 
-    transition: box-shadow 0.25s ease;
-    box-shadow: none;
+    background-color: var(--black-black); /*TODO: FIND ACTUAL BACKGROUND COLOR*/
 
-    transition: background-color 0.25s ease;
-    background-color: #0b1a22; /*TODO: FIND ACTUAL BACKGROUND COLOR*/
+    transition: transform 0.2s ease-in-out;
+
+    border-top: 1pt white solid;
+    border-left: 1pt white solid;
 }
 
 .textBlockWrapper:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: #0f222c;
+    /* color: var(--black); */
+    transform: translate(-10px, -15px); /* up and left */
+    background-color: var(--dark-blue-solid);
+
+    border-top: 0pt;
+    border-left: 0pt;
 }
 
 .textBlockWrapper.fade-in {
