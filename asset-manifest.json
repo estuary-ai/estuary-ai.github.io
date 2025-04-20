@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.af6907ca.css",
-    "main.js": "/static/js/main.87a5d14f.js",
+    "main.css": "/static/css/main.b3fa3c58.css",
+    "main.js": "/static/js/main.4c73a3ad.js",
     "static/js/453.20734259.chunk.js": "/static/js/453.20734259.chunk.js",
     "static/media/Title_Background_2.mp4": "/static/media/Title_Background_2.686751ea16fe9d106fb1.mp4",
     "static/media/Title_Background.mp4": "/static/media/Title_Background.e8a0aed9436c40e9be65.mp4",
     "static/media/SkellyChair.png": "/static/media/SkellyChair.e3db4eddfc1b2bf2cb8d.png",
     "static/media/Teaser_mesh.png": "/static/media/Teaser_mesh.a1007214c1a495f9ccc8.png",
-    "static/media/Diagram.png": "/static/media/Diagram.b977ec625556606d66c1.png",
     "static/media/Teaser_chair.png": "/static/media/Teaser_chair.464f4fcb53825fbd206a.png",
     "static/media/Teaser_meta.png": "/static/media/Teaser_meta.d98050f2736e14e88df5.png",
     "static/media/discord_logo_white.png": "/static/media/discord_logo_white.dd183b0ec398c49f50d3.png",
     "static/media/github_logo.png": "/static/media/github_logo.fbb410d61e747052965b.png",
+    "static/media/Diagram_client.png": "/static/media/Diagram_client.38029d8e45b12b518f44.png",
     "static/media/github_logo_white.png": "/static/media/github_logo_white.ab6987430fdb8a83acca.png",
+    "static/media/Diagram_server.png": "/static/media/Diagram_server.41fd6b5235af4edc0a9a.png",
     "static/media/youtube_logo_white.png": "/static/media/youtube_logo_white.3d901a704d02ca7258bb.png",
     "static/media/arxiv_logo.png": "/static/media/arxiv_logo.5c3ff0606d1120d74fab.png",
+    "static/media/Diagram_socket.png": "/static/media/Diagram_socket.9a30abc6440929435077.png",
     "static/media/youtube_logo.png": "/static/media/youtube_logo.0f12c4c32e4818c88b1d.png",
     "static/media/discord_logo.png": "/static/media/discord_logo.f33f7d9fc07e1d074064.png",
     "index.html": "/index.html",
-    "main.af6907ca.css.map": "/static/css/main.af6907ca.css.map",
-    "main.87a5d14f.js.map": "/static/js/main.87a5d14f.js.map",
+    "main.b3fa3c58.css.map": "/static/css/main.b3fa3c58.css.map",
+    "main.4c73a3ad.js.map": "/static/js/main.4c73a3ad.js.map",
     "453.20734259.chunk.js.map": "/static/js/453.20734259.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af6907ca.css",
-    "static/js/main.87a5d14f.js"
+    "static/css/main.b3fa3c58.css",
+    "static/js/main.4c73a3ad.js"
   ]
 }
