@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   min-height: 100%;
@@ -33,9 +37,9 @@ code {
 
   --light-gray: #969696;
   --middle-gray: #252627;
-  --dark-gray: #1b1b1b;
+  --dark-gray: #0a0a0a;
 
-  --moss-gradient: linear-gradient(180deg, #071924 0%, #161e1c 100%);
+  --moss-gradient: linear-gradient(180deg, #000000 0%, #070707 100%);
 
   --light-green: #ABBB7D;
   --middle-green: #94B536; 

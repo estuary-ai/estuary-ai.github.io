@@ -2,17 +2,14 @@
 ## Homepage and Documentation
 https://estuary-ai.github.io/
 
-Work in progress~
-
-
 ## Basics
-- Built with React
+- Built with React + TailwindCSS
 - `main` branch is for source code (modify this!)
-- `ghpages` branch is only for the build(?) for GitHub Pages
+- `ghpages` branch is only for the build for GitHub Pages
 
 ## Prereqs
-- npm --version = 10.2.4 (or higher?)
-- node --version = 20.11.1 (or higher?)
+- `npm --version` = 10.2.4 (or higher?)
+- `node --version` = 20.11.1 (or higher?)
 - need git and a GitHub account!
 
 ## Quick start
@@ -24,6 +21,11 @@ Work in progress~
 6. To preview your local changes on localhost:3000, run `npm start`
 7. To push and deploy on GitHub Pages, run `npm run deploy`
 8. Make sure to push your local changes to `main` branch as well!
+
+
+### Remarks on versions
+- Currently using `tailwindcss@3`, in order to easily use `tailwind.config.js`(?)
+- But in the future, preferably move to Next.js and use `tailwindcss@4`
 
 <!-- # Getting Started with Create React App
 
