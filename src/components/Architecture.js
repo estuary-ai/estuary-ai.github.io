@@ -45,14 +45,14 @@ const Architecture = (props) => {
                 </div>
 
                   <div className='flex flex-row w-full justify-content-center mt-10'>
-                    <div className="aspect-[16/9] w-fit">
+                    <div className="w-fit">
                     {/* floatA, B, C defined in tailwind.config.js */}
                       <img src={diagram_client} alt='diagram' className="max-w-[370px] w-full animate-floatA"/>
                     </div>
-                    <div className="aspect-[16/9] w-fit -mt-12">
+                    <div className="-mt-12">
                       <img src={diagram_socket} alt='diagram' className="max-w-[220px] w-full animate-floatB"/>
                     </div>
-                    <div className="aspect-[16/9] w-fit">
+                    <div className="w-fit">
                       <img src={diagram_server} alt='diagram' className="max-w-[370px] w-full animate-floatC"/>
                     </div>
                   </div>
