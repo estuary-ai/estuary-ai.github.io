@@ -13,7 +13,7 @@ function SideBar({ currentPageName }) {
                 /* highlight the current page in sidebar */
                 #${currentPageName}{
                     background-color: var(--orange);
-                    color: var(--white);
+                    color: var(--black);
                 }
                                 
             `}</style>

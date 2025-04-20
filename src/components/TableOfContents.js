@@ -24,7 +24,7 @@ const Headings = ({ headings, activeId }) => (
           {heading.title}
         </a>
         {heading.items.length > 0 && (
-          <ul>
+          <ul className="pl-6 border-l-[0.4pt]">
             {heading.items.map((child) => (
               <li
                 key={child.id}
@@ -44,6 +44,7 @@ const Headings = ({ headings, activeId }) => (
                         behavior: "smooth"
                     });
                   }}
+                  className="ml-4 text-sm"
                 >
                   {child.title}
                 </a>

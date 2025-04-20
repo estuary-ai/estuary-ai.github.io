@@ -19,7 +19,7 @@ function NavBar() {
 
     return (
         <div>
-            <div className="navigation">
+            <div className="navigation flex w-full">
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/docs">Docs</Link></li>
@@ -56,7 +56,7 @@ function NavBar() {
                         background-color: #373737f5;
                         color: aliceblue;
                         height: 150px;
-                        width: 100vw;
+                        width: 100%;
                         margin-top: 50px;
                     }
                 }

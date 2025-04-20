@@ -9,10 +9,12 @@ nav {
 }
 
 .toc {
-    width: 200px;
+    /* min-width: 200px;
+    max-width: fit-content; */
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+    padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: var(--light-gray);
@@ -43,7 +45,7 @@ nav {
 }
 
 /* when screen small */
-@media (max-width: 767px){
+@media (max-width: 1050px){
     .toc{
         display: none;
     }
