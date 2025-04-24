@@ -8,12 +8,23 @@ function Footer() {
 
                 <div className='twoColumn'>
                     {/* left column */}
-                    <div>
+                    <div className='flex flex-col'>
                         <p className="footerTitle">Resources</p>
-                        <a className="linkbtnFooter arxivLogo"  href="https://dl.acm.org/doi/pdf/10.1145/3652988.3696198" target="_blank" rel="noreferrer" />
-                        <a className="linkbtnFooter githubLogo" href="https://github.com/estuary-ai" target="_blank" rel="noreferrer" />
-                        <a className="linkbtnFooter youtubeLogo" href="https://youtu.be/m5wO7E0zet8" target="_blank" rel="noreferrer" />
+                        <div className='flex flex-row'>
+                            {/* IVA24 */}
+                            <div className='mt-2'>
+                                <a className="linkbtnFooter arxivLogo"  href="https://arxiv.org/abs/2410.20116" target="_blank" rel="noreferrer" />
+                                <p className='-mt-4 italic'>IVA'24</p>
+                            </div>
+                            {/* CHI25 */}
+                            <div className='mt-2'>
+                                <a className="linkbtnFooter arxivLogo"  href="https://arxiv.org/abs/2504.14427" target="_blank" rel="noreferrer" />
+                                <p className='-mt-4 italic'>CHI'25</p>
+                            </div>
 
+                            <a className="linkbtnFooter githubLogo" href="https://github.com/estuary-ai" target="_blank" rel="noreferrer" />
+                            <a className="linkbtnFooter youtubeLogo mt-3" href="https://youtu.be/m5wO7E0zet8" target="_blank" rel="noreferrer" />
+                        </div>
                     </div>
 
                     {/* right column */}
