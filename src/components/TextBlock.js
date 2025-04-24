@@ -46,6 +46,7 @@ const TextBlock = (props) => {
         className="absolute inset-0 -z-10 bg-white"
         style={{
           padding: '20px',
+          borderRadius: '4%'
         }}
       ></div>
 

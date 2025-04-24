@@ -39,7 +39,7 @@ const Architecture = (props) => {
             ref={featureRef}
             className={`archWrapper`}>
                 
-                <div className={`archText ${isVisible ? 'fade-in' : ''}`}>
+                <div className={`archText ${isVisible ? 'fade-in' : ''} mb-40`}>
                     <div className="archTitle">{title}</div>
                     <div className="archStatement">{content}</div>
                 </div>

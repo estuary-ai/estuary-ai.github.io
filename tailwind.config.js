@@ -6,15 +6,15 @@ module.exports = {
       keyframes: {
         floatA: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-7px) translateX(3px)' },
+          '50%': { transform: 'translateY(-10px) translateX(7px)' },
         },
         floatB: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-8px) translateX(-5px)' },
+          '50%': { transform: 'translateY(-12px) translateX(-9px)' },
         },
         floatC: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5px) translateX(4px)' },
+          '50%': { transform: 'translateY(-13px) translateX(9px)' },
         },
       },
       animation: {

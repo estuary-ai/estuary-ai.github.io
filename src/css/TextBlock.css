@@ -28,22 +28,14 @@
 
     transition: transform 0.2s ease-in-out;
 
-    border-top: 1pt white solid;
-    border-left: 1pt white solid;
+    border: 1pt white solid;
+    border-radius: 4%;
 }
 
 .textBlockWrapper:hover {
     /* color: var(--black); */
-    transform: translate(-10px, -15px); /* up and left */
+    transform: translate(-10px, -10px); /* up and left */
     background-color: var(--dark-blue-solid);
-
-    border-top: 0pt;
-    border-left: 0pt;
-}
-
-.textBlockWrapper.fade-in {
-    /* opacity: 1; 
-    transform: translateY(0);  */
 }
 
 .textBlockHeader{

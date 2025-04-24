@@ -1,19 +1,21 @@
 /* * {box-sizing: border-box} */
 .mySlides {display: none}
 .slideImg {
-    vertical-align: middle;
-    /* border-radius: 20px; */
+  vertical-align: middle;
+  border-radius: 2rem;
 }
-
-/* Slideshow container */
+  
+  /* Slideshow container */
 .slideshow-container {
   /* max-width: 1000px; */
   width: 100%;
   position: relative;
   margin: auto;
   /* border-radius: 20px; */
-  box-shadow: -10px -10px 0px white ;
-  box-sizing: border-box;
+  border: 1pt solid white;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 0px white ;
+  /* box-sizing: border-box; */
 
 }
 
