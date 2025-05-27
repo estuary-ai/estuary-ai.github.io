@@ -4,14 +4,16 @@ import '../css/Title.css'; // Import the CSS file for styling
 const Title = (props) => {
     let mainTitle = props.mainTitle;
     let subtitle = props.subtitle;
-    let bgv = props.bgv;
+    let bgvMp4 = props.bgvMp4;
+    let bgvWebm = props.bgvWebm;
     let showButtons = props.showButtons
 
     return ( 
         <div className="header">
-                <video src={bgv} className="absolute top-0 left-0 w-full h-full object-cover" width="600" height="300" autoPlay={true} muted={true} loop={true}/>
-                <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent to-black pointer-events-none" />
-
+                <video className="bgv" width="600" height="300" autoPlay={true} muted={true} loop={true}>
+                    {bgvWebm && <source src={bgvWebm} type="video/webm" />}
+                    {bgvMp4  && <source src={bgvMp4}  type="video/mp4"  />}
+                </video>
                 <div className='title'>
                     <h1 className='mainTitle'>{mainTitle}</h1>
                     <h2 className='subtitle'>{subtitle}</h2>
