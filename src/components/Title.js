@@ -19,7 +19,6 @@ const Title = (props) => {
                        width="600"
                        height="300">
                     {bgvWebm && <source src={bgvWebm} type="video/webm" />}
-                    {bgvMp4  && <source src={bgvMp4}  type="video/mp4"  />}
                 </video>
                 <div className='title'>
                     <h1 className='mainTitle'>{mainTitle}</h1>

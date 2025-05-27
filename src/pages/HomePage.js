@@ -10,7 +10,6 @@ import teasermeta from "../assets/Teaser_meta.png";
 // import backgroundVideo from "../assets/Title_Background.mp4";
 
 // https://youtu.be/oGGHE6YXBlo?si=Ux2qYWVjabYe3Vqi
-import backgroundMp4 from "../assets/Title_Background_2.mp4";
 import backgroundWebm from "../assets/Title_Background_2.webm";
 
 
@@ -62,7 +61,7 @@ function HomePage() {
 
         <div className="homeWrapper">
             {/* top title and links */}
-            <Title mainTitle={"Estuary"} subtitle={"An Open-Source Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents"} bgvMp4={backgroundMp4} bgvWebm={backgroundWebm} showButtons={true} />
+            <Title mainTitle={"Estuary"} subtitle={"An Open-Source Multimodal Framework For Building Low-Latency Real-Time Socially Interactive Agents"} bgvWebm={backgroundWebm} showButtons={true} />
             <Slogan slogan={"Build your LLM-powered AI agent pipeline with Estuary, a flexible and robust cross-platform framework."} />
 
             <div className="blurbWrapper">

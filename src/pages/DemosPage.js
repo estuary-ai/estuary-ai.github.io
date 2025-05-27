@@ -2,14 +2,13 @@ import { Card } from 'react-bootstrap';
 import Title from '../components/Title';
 import GetStarted from '../components/GetStarted';
 import '../css/DemosPage.css'; // Import the CSS file for styling
-import backgroundMp4 from "../assets/Title_Background.mp4";
 import backgroundWebm from "../assets/Title_Background.webm";
 
 function DemosPage() {
     return (
         // style={{marginTop: "80px", marginLeft: "30px", marginRight: "30px"}}
         <div className='demoEntire'>
-            <Title mainTitle={"Demos"} subtitle={"Demo videos and papers to be added soon!"} bgvMp4={backgroundMp4} bgvWebm={backgroundWebm} showButtons={false}/>
+            <Title mainTitle={"Demos"} subtitle={"Demo videos and papers to be added soon!"} bgvWebm={backgroundWebm} showButtons={false}/>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <iframe
                     className='demoVid'
