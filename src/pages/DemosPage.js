@@ -1,6 +1,7 @@
 import { Card } from 'react-bootstrap';
 import Title from '../components/Title';
 import GetStarted from '../components/GetStarted';
+import '../css/DemosPage.css'; // Import the CSS file for styling
 import backgroundMp4 from "../assets/Title_Background.mp4";
 import backgroundWebm from "../assets/Title_Background.webm";
 
