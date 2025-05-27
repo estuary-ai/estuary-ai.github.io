@@ -11,12 +11,13 @@ const Title = (props) => {
     return ( 
         <div className="header">
                 <video className="bgv"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  width="600"
-                  height="300">
+                       autoPlay
+                       loop
+                       muted
+                       playsInline
+                       preload="metadata"
+                       width="600"
+                       height="300">
                     {bgvWebm && <source src={bgvWebm} type="video/webm" />}
                     {bgvMp4  && <source src={bgvMp4}  type="video/mp4"  />}
                 </video>
